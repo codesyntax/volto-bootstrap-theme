@@ -1,0 +1,41 @@
+// Importar solo variables y mixins de Bootstrap globalmente (para poder usarlas en cualquier parte)
+@import 'addonsThemeCustomizationsVariables';
+// @import "variables.scss";
+
+// Importar estilos personalizados antes de Bootstrap
+
+// @import "bootstrap/dist/css/bootstrap.min.css";
+// @import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap";
+
+.public-ui {
+    // Utilities
+    @import "bootstrap/scss/utilities/api";
+    // scss-docs-end import-stack
+}
+
+// @import "cs-style/header.scss";
+// @import "cs-style/footer.scss";
+// @import "cs-style/background.scss";
+// @import "cs-style/blocks/tabs";
+// @import "cs-style/blocks/button";
+// @import "cs-style/blocks/grid";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------*/
+@import 'addonsThemeCustomizationsMain';
+/*---------------------------------------------------*/

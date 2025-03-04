@@ -1,0 +1,14 @@
+{
+  "core": {
+    "output": "./",
+    "package": "@plone/volto",
+    "url": "git@github.com:plone/volto.git",
+    "https": "https://github.com/plone/volto.git",
+    "tag": "18.9.0"
+  },
+  "volto-tabs-block": {
+    "local": "packages/volto-tabs-block",
+    "package": "@eeacms/volto-tabs-block",
+    "output": "packages/volto-tabs-block"
+  }
+}

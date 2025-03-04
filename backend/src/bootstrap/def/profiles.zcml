@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="bootstrap.def"
+    >
+
+  <genericsetup:registerProfile
+      name="default"
+      title="volto-bootstrap-theme: Install"
+      description="Package to configure a new volto-bootstrap-theme site"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      />
+
+  <genericsetup:registerProfile
+      name="initial"
+      title="volto-bootstrap-theme: Example content"
+      description="Create example content to showcase the new website"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/initial"
+      pre_handler=".setuphandlers.initial.create_example_content"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="volto-bootstrap-theme: Uninstall"
+      description="Uninstall volto-bootstrap-theme setup."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      />
+
+  <!-- Hide Uninstall Profile-->
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="bootstrap.def"
+      />
+
+
+  <include package=".upgrades" />
+
+</configure>

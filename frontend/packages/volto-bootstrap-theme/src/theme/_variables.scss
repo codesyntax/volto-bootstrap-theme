@@ -1,0 +1,37 @@
+@use 'sass:map';
+
+
+$primary: #BED600 !default;
+
+$secondary: #000000 !default;
+$success: #28a745 !default;
+$info: #17a2b8 !default;
+$warning: #ffcc00 !default;
+$danger: #d9534f !default;
+
+// Tipografía
+$font-family-base: 'Arial', sans-serif !default;
+$font-size-base: 1rem !default;
+$line-height-base: 1.5 !default;
+
+// Bordes y radios
+$border-radius: 0.5rem !default;
+$border-width: 2px !default;
+
+// Espaciado y contenedores
+$spacer: 1rem !default;
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px) !default;
+
+// Estilos de botones
+$btn-padding-y: 0.75rem !default;
+$btn-padding-x: 1.5rem !default;
+$btn-border-radius: 0.3rem !default;
+$btn-font-weight: bold !default;
+$btn-primary-bg: #BED600 !default;
+$btn-primary-border: #BED600 !default;
+$btn-secondary-bg: #666666 !default;
+$btn-secondary-border: #666666 !default;
