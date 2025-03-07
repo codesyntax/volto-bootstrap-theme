@@ -3,7 +3,7 @@
 ## Why was volto-bootstrap-theme created?
 
 The `volto-bootstrap-theme` was created to provide a seamless integration of Bootstrap with Volto. Its main goal is to offer a fully functional Volto theme that leverages Bootstrap’s utility classes while maintaining ease of customization.
-![Volto Bootstrap Theme img](docs/_static/images/index.png)
+![Volto Bootstrap Theme img](https://github.com/codesyntax/volto-bootstrap-theme/blob/main/docs/_static/index.png?raw=true)
 
 
 
