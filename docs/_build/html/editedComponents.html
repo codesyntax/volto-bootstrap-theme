@@ -208,7 +208,7 @@
       
       
       
-      <li><a href="_sources/editedComponents.rst" target="_blank"
+      <li><a href="_sources/editedComponents.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -218,7 +218,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.rst</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -304,32 +304,30 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#button-block">Button Block</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-has-changed">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How It Works</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accordion-block">Accordion Block</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">How It Works</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slider-block">Slider Block</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">How It Works</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabs-block">Tabs Block</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">How It Works</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Tabs Block</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">What Has Changed?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#column-and-grid-blocks">Column And Grid Blocks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">How It Works</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
             </nav>
         </div>
@@ -346,33 +344,41 @@ document.write(`
 <p>In this section, we will go through the components that have been edited in the <code class="docutils literal notranslate"><span class="pre">volto-bootstrap-theme</span></code>. For each component, we will explain what has been changed and how the component works in the context of the theme.</p>
 <section id="button-block">
 <h2>Button Block<a class="headerlink" href="#button-block" title="Link to this heading">#</a></h2>
-<img alt="img btn" src="_images/button.png" />
-<img alt="img btn edit" src="_images/button_edit.png" />
+<p>.. image:: /_static/button.png
+:alt: img btn
+.. image:: /_static/button_edit.png
+:alt: img btn edit</p>
 <section id="what-has-changed">
 <h3>What Has Changed?<a class="headerlink" href="#what-has-changed" title="Link to this heading">#</a></h3>
 <p>The Button Block component has been updated to fully adopt Bootstrap styles, making it more flexible and customizable. The key modifications include:</p>
 <ul class="simple">
 <li><p><strong>Bootstrap Styling</strong>: The block now uses Bootstrap’s button styles, which can be modified directly from the edit panel.</p></li>
-<li><p><strong>New Customization Options</strong>: Added options for:
-- <strong>Button Type</strong>: Select between different colors for tour button (e.g., <cite>primary</cite>, <cite>secondary</cite>).
-- <strong>Size Control</strong>: Choose different button sizes to match design requirements (<cite>sm</cite>, <cite>md</cite>, <cite>lg</cite>).
-- <strong>Button outline variation</strong>: Checkbox for the outline variation.</p></li>
+<li><p><strong>New Customization Options</strong>: Added options for:</p>
+<ul>
+<li><p><strong>Button Type</strong>: Select between different colors for tour button (e.g., <code class="docutils literal notranslate"><span class="pre">primary</span></code>, <code class="docutils literal notranslate"><span class="pre">secondary</span></code>).</p></li>
+<li><p><strong>Size Control</strong>: Choose different button sizes to match design requirements (<code class="docutils literal notranslate"><span class="pre">sm</span></code>, <code class="docutils literal notranslate"><span class="pre">md</span></code>, <code class="docutils literal notranslate"><span class="pre">lg</span></code>).</p></li>
+<li><p><strong>Button outline variation</strong>: Checkbox for the outline variation.</p></li>
+</ul>
+</li>
 <li><p><strong>Improved UI/UX</strong>: The editing experience now allows users to easily configure the button’s appearance without manual CSS adjustments.</p></li>
 </ul>
 </section>
-</section>
 <section id="how-it-works">
-<h2>How It Works<a class="headerlink" href="#how-it-works" title="Link to this heading">#</a></h2>
+<h3>How It Works<a class="headerlink" href="#how-it-works" title="Link to this heading">#</a></h3>
 <p>The Button Block allows users to create fully customizable buttons in the Volto CMS. It leverages Bootstrap’s button classes to control its appearance.</p>
-<p>When editing, users can:
-- Select the <strong>button type</strong>, which will change the button colors.
-- Checkbox for the  <strong>outline</strong> variation, by default the button will be solid.
-- Adjust the <strong>button size</strong> to fit different layouts.</p>
+<p>When editing, users can:</p>
+<ul class="simple">
+<li><p>Select the <strong>button type</strong>, which will change the button colors.</p></li>
+<li><p>Checkbox for the  <strong>outline</strong> variation, by default the button will be solid.</p></li>
+<li><p>Adjust the <strong>button size</strong> to fit different layouts.</p></li>
+</ul>
 <p>The block is fully responsive, ensuring the button adapts to various screen sizes while maintaining Bootstrap’s consistent styling.</p>
+</section>
 </section>
 <section id="accordion-block">
 <h2>Accordion Block<a class="headerlink" href="#accordion-block" title="Link to this heading">#</a></h2>
-<img alt="img accordion" src="_images/accordion.png" />
+<p>.. image:: /_static/accordion.png
+:alt: img accordion</p>
 <section id="id1">
 <h3>What Has Changed?<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>The Accordion Block has been updated to adopt Bootstrap styles, improving its appearance and animations. The key modifications include:</p>
@@ -381,15 +387,16 @@ document.write(`
 <li><p><strong>Smooth Animations</strong>: Added Bootstrap’s built-in animation effects for better user experience.</p></li>
 </ul>
 </section>
-</section>
 <section id="id2">
-<h2>How It Works<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h3>How It Works<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p>The Accordion Block functions the same way as the default Volto accordion block. Users can add collapsible panels to their pages, toggling sections open or closed as needed.</p>
 <p>With this update, the accordion now seamlessly integrates Bootstrap’s responsive behavior and animation, ensuring a smoother and more visually appealing interaction.</p>
 </section>
+</section>
 <section id="slider-block">
 <h2>Slider Block<a class="headerlink" href="#slider-block" title="Link to this heading">#</a></h2>
-<img alt="img slider" src="_images/slider.png" />
+<p>.. image:: /_static/slider.png
+:alt: img slider</p>
 <section id="id3">
 <h3>What Has Changed?<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>The Slider Block has been updated to incorporate Bootstrap styles and animations, enhancing its visual appeal and usability. The key modifications include:</p>
@@ -398,15 +405,16 @@ document.write(`
 <li><p><strong>Smooth Animations</strong>: Integrated Bootstrap’s JavaScript-based carousel animations for a fluid transition effect.</p></li>
 </ul>
 </section>
-</section>
 <section id="id4">
-<h2>How It Works<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<h3>How It Works<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <p>The Slider Block continues to function as before, allowing users to create image sliders within their pages.</p>
 <p>With this update, the block now leverages Bootstrap’s responsive behavior and animations, ensuring smooth transitions and an improved user experience across all devices.</p>
 </section>
+</section>
 <section id="tabs-block">
 <h2>Tabs Block<a class="headerlink" href="#tabs-block" title="Link to this heading">#</a></h2>
-<img alt="img tabs" src="_images/tabs.png" />
+<p>.. image:: /_static/tabs.png
+:alt: img tabs</p>
 <section id="id5">
 <h3>What Has Changed?<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <p>The Tabs Block has been updated to integrate Bootstrap styles and simplify its functionality. The key modifications include:</p>
@@ -415,29 +423,30 @@ document.write(`
 <li><p><strong>Removal of Variants</strong>: The Accordion and Slider variations have been removed, as dedicated blocks now handle those functionalities. The Tabs Block will always use the default tab layout.</p></li>
 </ul>
 </section>
-</section>
 <section id="id6">
-<h2>How It Works<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<h3>How It Works<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p>Users no longer need to select a variation, as the Tabs Block now has a single default layout. Other configuration options, such as adding, reordering, and customizing tab labels, remain unchanged.</p>
 </section>
+</section>
+<section id="column-and-grid-blocks">
+<h2>Column And Grid Blocks<a class="headerlink" href="#column-and-grid-blocks" title="Link to this heading">#</a></h2>
+<p>.. image:: /_static/columnAndGrid.png
+:alt: img tabs</p>
 <section id="id7">
-<h2>Tabs Block<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<img alt="img tabs" src="_images/columnAndGrid.png" />
-<section id="id8">
-<h3>What Has Changed?<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<h3>What Has Changed?<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <p>The Column and Grid Blocks have been updated to adopt Bootstrap’s grid system, ensuring better alignment and responsiveness. The key modification includes:</p>
 <ul class="simple">
 <li><p><strong>Bootstrap Integration</strong>: The internal class structure has been updated to use Bootstrap’s grid classes while maintaining the same configuration options.</p></li>
 </ul>
 </section>
-</section>
-<section id="id9">
-<h2>How It Works<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<section id="id8">
+<h3>How It Works<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>The way users configure these blocks remains unchanged. You can still define column layouts, adjust spacing, and organize content as before—now with Bootstrap’s responsive grid handling the structure automatically.</p>
-<section id="conclusion">
-<h3>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h3>
-<p>These are the blocks that have been updated so far. More changes and improvements will be coming soon to enhance the functionality and user experience. Stay tuned for future updates!</p>
 </section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>These are the blocks that have been updated so far. More changes and improvements will be coming soon to enhance the functionality and user experience. Stay tuned for future updates!</p>
 </section>
 </section>
 
@@ -488,32 +497,30 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#button-block">Button Block</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-has-changed">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How It Works</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accordion-block">Accordion Block</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">How It Works</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slider-block">Slider Block</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">How It Works</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabs-block">Tabs Block</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">How It Works</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Tabs Block</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">What Has Changed?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#column-and-grid-blocks">Column And Grid Blocks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">What Has Changed?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">How It Works</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">How It Works</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
   </nav></div>
 

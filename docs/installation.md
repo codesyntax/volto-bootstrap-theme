@@ -1,15 +1,11 @@
-Installation
-============
+# Installation
 
-To install the `@codesyntax/volto-bootstrap-theme` package, run the following command:
+Install `@codesyntax/volto-bootstrap-theme` in your project package.
 
-.. code-block:: bash
-
-   npm install @codesyntax/volto-bootstrap-theme
 
 In addition to the `volto-bootstrap-theme` package, you should also install the following add-ons in your project setup:
 
-.. code-block:: json
+```json
 
    "dependencies": {
     "@eeacms/volto-accordion-block": "^10.4.6",
@@ -23,18 +19,18 @@ In addition to the `volto-bootstrap-theme` package, you should also install the 
     "@eeacms/volto-block-style": "*",
     "@codesyntax/volto-bootstrap-theme"
   }
-
-.. note::
+```
+```{note}
 
    The version numbers of these add-ons are merely illustrative, but current as of 2025-03-05.
    You should update the versions to their latest.
-
+```
 This theme will not install the add-ons for you, as they are declared as `peerDependencies`.
 This is because the theme won't have to force you to use any specific add-on version, and avoids package hoisting issues.
 
-In your project or policy add-on :file:`package.json`, you should declare all of them as Volto add-ons:
+In your project or policy add-on {file}`package.json`, you should declare all of them as Volto add-ons:
 
-.. code-block:: json
+```json
 
     "addons": [
     "@eeacms/volto-accordion-block",
@@ -44,21 +40,20 @@ In your project or policy add-on :file:`package.json`, you should declare all of
     "@eeacms/volto-block-style",
     "@eeacms/volto-tabs-block",
     "@codesyntax/volto-bootstrap-theme",
-    "your_policy_addon_here"
   ],
-
+```
 Your policy add-on should be the last one, so that it overrides any previous ones.
-:code:`volto-bootstrap-theme` should be the second-last, placed immediately before your policy add-on.
+{code}`volto-bootstrap-theme` should be the second-last, placed immediately before your policy add-on.
 
-Then, declare the theme in your project :file:`package.json`:
+Then, declare the theme in your project {file}`package.json`:
 
-.. code-block:: json
+``` json
 
   "theme": "@codesyntax/volto-bootstrap-theme",
+```
+Alternatively, you can declare it in your project's {file}`volto.config.js`:
 
-Alternatively, you can declare it in your project's :file:`volto.config.js`:
-
-.. code-block:: js
+``` js
 
   const addons = [];
   const theme = '@codesyntax/volto-bootstrap-theme';
@@ -67,5 +62,5 @@ Alternatively, you can declare it in your project's :file:`volto.config.js`:
     addons,
     theme,
   };
-
-Although you can specify your project add-ons in :file:`volto.config.js`, sometimes it is better to have them all in one place in your policy add-on for portability.
+```
+Although you can specify your project add-ons in {file}`volto.config.js`, sometimes it is better to have them all in one place in your policy add-on for portability.
