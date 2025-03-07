@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Installation &#8212; volto-bootstrap-theme 1.0.0-alpha.0 documentation</title>
+    <title>Installation &#8212; @codesyntax/volto-bootstrap-theme 1.0.0-alpha.0 documentation</title>
   
   
   
@@ -133,7 +133,7 @@
   
   
   
-    <p class="title logo__title">volto-bootstrap-theme 1.0.0-alpha.0 documentation</p>
+    <p class="title logo__title">@codesyntax/volto-bootstrap-theme 1.0.0-alpha.0 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -306,8 +306,8 @@ document.write(`
                   
   <section id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
-<p>To install the <cite>volto-bootstrap-theme</cite> package, run the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>install<span class="w"> </span>volto-bootstrap-theme
+<p>To install the <cite>&#64;codesyntax/volto-bootstrap-theme</cite> package, run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>install<span class="w"> </span>@codesyntax/volto-bootstrap-theme
 </pre></div>
 </div>
 <p>In addition to the <cite>volto-bootstrap-theme</cite> package, you should also install the following add-ons in your project setup:</p>
@@ -320,7 +320,8 @@ document.write(`
 <span class="w">  </span><span class="nt">&quot;embla-carousel-react&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^8.0.0&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@kitconcept/volto-button-block&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@eeacms/volto-columns-block&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^8.0.1&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;@eeacms/volto-block-style&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+<span class="w">  </span><span class="nt">&quot;@eeacms/volto-block-style&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;@codesyntax/volto-bootstrap-theme&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -339,7 +340,7 @@ This is because the theme won’t have to force you to use any specific add-on v
 <span class="w">  </span><span class="s2">&quot;@eeacms/volto-columns-block&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="s2">&quot;@eeacms/volto-block-style&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="s2">&quot;@eeacms/volto-tabs-block&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="s2">&quot;volto-bootstrap-theme&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;@codesyntax/volto-bootstrap-theme&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="s2">&quot;your_policy_addon_here&quot;</span>
 <span class="p">],</span>
 </pre></div>
@@ -347,12 +348,12 @@ This is because the theme won’t have to force you to use any specific add-on v
 <p>Your policy add-on should be the last one, so that it overrides any previous ones.
 <code class="code docutils literal notranslate"><span class="pre">volto-bootstrap-theme</span></code> should be the second-last, placed immediately before your policy add-on.</p>
 <p>Then, declare the theme in your project <code class="file docutils literal notranslate"><span class="pre">package.json</span></code>:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@kitconcept/volto-bootstrap-theme&quot;</span><span class="p">,</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;theme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@codesyntax/volto-bootstrap-theme&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
 <p>Alternatively, you can declare it in your project’s <code class="file docutils literal notranslate"><span class="pre">volto.config.js</span></code>:</p>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span><span class="w"> </span><span class="nx">addons</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[];</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;volto-bootstrap-theme&#39;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;@codesyntax/volto-bootstrap-theme&#39;</span><span class="p">;</span>
 
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">addons</span><span class="p">,</span>

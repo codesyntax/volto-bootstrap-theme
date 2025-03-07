@@ -1,11 +1,11 @@
 Installation
 ============
 
-To install the `volto-bootstrap-theme` package, run the following command:
+To install the `@codesyntax/volto-bootstrap-theme` package, run the following command:
 
 .. code-block:: bash
 
-   npm install volto-bootstrap-theme
+   npm install @codesyntax/volto-bootstrap-theme
 
 In addition to the `volto-bootstrap-theme` package, you should also install the following add-ons in your project setup:
 
@@ -20,7 +20,8 @@ In addition to the `volto-bootstrap-theme` package, you should also install the 
     "embla-carousel-react": "^8.0.0",
     "@kitconcept/volto-button-block": "*",
     "@eeacms/volto-columns-block": "^8.0.1",
-    "@eeacms/volto-block-style": "*"
+    "@eeacms/volto-block-style": "*",
+    "@codesyntax/volto-bootstrap-theme"
   }
 
 .. note::
@@ -42,7 +43,7 @@ In your project or policy add-on :file:`package.json`, you should declare all of
     "@eeacms/volto-columns-block",
     "@eeacms/volto-block-style",
     "@eeacms/volto-tabs-block",
-    "volto-bootstrap-theme",
+    "@codesyntax/volto-bootstrap-theme",
     "your_policy_addon_here"
   ],
 
@@ -53,14 +54,14 @@ Then, declare the theme in your project :file:`package.json`:
 
 .. code-block:: json
 
-  "theme": "@kitconcept/volto-bootstrap-theme",
+  "theme": "@codesyntax/volto-bootstrap-theme",
 
 Alternatively, you can declare it in your project's :file:`volto.config.js`:
 
 .. code-block:: js
 
   const addons = [];
-  const theme = 'volto-bootstrap-theme';
+  const theme = '@codesyntax/volto-bootstrap-theme';
 
   module.exports = {
     addons,

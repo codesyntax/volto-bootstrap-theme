@@ -11,7 +11,7 @@ volto-bootstrap-theme documentation
 .. image:: /_static/index.png
    :alt: img CodeSyntax Addon
 Why was volto-bootstrap-theme created?
---------------------------------------
+---------------------------------------
 
 The `volto-bootstrap-theme` was created to provide a seamless integration of Bootstrap with Volto. Its main goal is to offer a fully functional Volto theme that leverages Bootstrap’s utility classes while maintaining ease of customization.
 
