@@ -35,7 +35,7 @@
   "dependencies": {
     "@plone/volto": "workspace:*",
     "@plone/registry": "workspace:*",
-    "volto-bootstrap-theme": "workspace:*",
+    "@codesyntax/volto-bootstrap-theme": "workspace:*",
     "@eeacms/volto-tabs-block": "workspace:*"
   },
   "devDependencies": {

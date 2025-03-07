@@ -12,6 +12,9 @@ importers:
 
   .:
     dependencies:
+      '@codesyntax/volto-bootstrap-theme':
+        specifier: workspace:*
+        version: link:packages/volto-bootstrap-theme
       '@eeacms/volto-tabs-block':
         specifier: workspace:*
         version: link:packages/volto-tabs-block
@@ -21,9 +24,6 @@ importers:
       '@plone/volto':
         specifier: workspace:*
         version: link:core/packages/volto
-      volto-bootstrap-theme:
-        specifier: workspace:*
-        version: link:packages/volto-bootstrap-theme
     devDependencies:
       mrs-developer:
         specifier: ^2.2.0
@@ -20669,7 +20669,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.10.7
+      '@types/node': 20.17.23
 
   '@types/ws@8.5.14':
     dependencies:

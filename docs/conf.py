@@ -7,7 +7,7 @@ import json
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'volto-bootstrap-theme'
+project = '@codesyntax/volto-bootstrap-theme'
 copyright = '2025, CodeSyntax'
 author = 'CodeSyntax'
 

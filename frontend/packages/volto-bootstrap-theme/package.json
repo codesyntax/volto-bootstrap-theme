@@ -1,5 +1,5 @@
 {
-  "name": "volto-bootstrap-theme",
+  "name": "@codesyntax/volto-bootstrap-theme",
   "version": "1.0.0-alpha.0",
   "description": "A new project using Plone 6.",
   "main": "src/index.js",
@@ -20,7 +20,7 @@
     "access": "public"
   },
   "addons": [
-    "volto-bootstrap-theme",
+    "@codesyntax/volto-bootstrap-theme",
     "@eeacms/volto-accordion-block",
     "@kitconcept/volto-slider-block",
     "@kitconcept/volto-button-block",
@@ -28,7 +28,7 @@
     "@eeacms/volto-block-style",
     "@eeacms/volto-tabs-block"
   ],
-  "theme": "volto-bootstrap-theme",
+  "theme": "@codesyntax/volto-bootstrap-theme",
   "scripts": {
     "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon",
     "dry-release": "release-it --dry-run",

@@ -9,7 +9,7 @@ volto-bootstrap-theme documentation
    :alt: Logo CodeSyntax
 
 .. image:: /_static/index.png
-   :alt: Logo CodeSyntax
+   :alt: img CodeSyntax Addon
 Why was volto-bootstrap-theme created?
 --------------------------------------
 
@@ -22,7 +22,7 @@ Key Benefits
 - **Easy Customization**: Built around Bootstrap variables, allowing developers to adjust styles without manually overriding numerous CSS rules.  
 - **Flexibility & Consistency**: Ensures a structured and maintainable design system within the Volto ecosystem.  
 
-By using `volto-bootstrap-theme`, you can take advantage of Bootstrap's powerful styling system while keeping full control over the design through simple variable adjustments. This makes it an ideal solution for projects that require both a structured and easily customizable UI.
+By using `@codesyntax/volto-bootstrap-theme`, you can take advantage of Bootstrap's powerful styling system while keeping full control over the design through simple variable adjustments. This makes it an ideal solution for projects that require both a structured and easily customizable UI.
 
 
 .. toctree::
