@@ -1,8 +1,8 @@
 {
   "name": "volto-bootstrap-theme-dev",
   "version": "1.0.0-alpha.0",
-  "description": "A new add-on for Volto",
-  "author": "Plone Community",
+  "description": "A new project using Plone 6.",
+  "author": "Plone Foundation",
   "homepage": "https://github.com/collective/volto-bootstrap-theme",
   "license": "MIT",
   "keywords": [
@@ -35,7 +35,8 @@
   "dependencies": {
     "@plone/volto": "workspace:*",
     "@plone/registry": "workspace:*",
-    "volto-bootstrap-theme": "workspace:*"
+    "@codesyntax/volto-bootstrap-theme": "workspace:*",
+    "@eeacms/volto-tabs-block": "workspace:*"
   },
   "devDependencies": {
     "mrs-developer": "^2.2.0"
