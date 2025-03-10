@@ -1,0 +1,7 @@
+header {
+    background: linear-gradient(135deg, $success, $primary); // Degradado entre verde claro y verde más oscuro
+    color: #ffffff; // Texto en blanco para contrastar con el fondo
+    padding: 1rem 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}

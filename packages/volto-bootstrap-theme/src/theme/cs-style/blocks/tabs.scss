@@ -1,0 +1,145 @@
+// Estilos generales para las pestañas
+.nav-tabs {
+    border-bottom: 2px solid $secondary;
+
+    .nav-item {
+        margin-bottom: 0;
+
+        .nav-link {
+            font-size: $font-size-base;
+            font-weight: bold;
+            color: $secondary;
+            background-color: transparent;
+            border: none;
+            border-radius: $border-radius;
+            padding: 0.75rem 1.25rem;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: lighten($secondary, 10%);
+                color: #ffffff;
+            }
+
+            &.active {
+                color: $primary;
+                background-color: $secondary;
+                border-bottom: 3px solid $primary;
+            }
+
+            &.disabled {
+                color: #666666;
+                background-color: transparent;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .nav-item .menu-item-count {
+        font-size: 0.875rem;
+        color: $primary;
+        margin-right: 0.5rem;
+    }
+
+    .nav-item .menu-item-text {
+        font-size: 1rem;
+        color: $secondary;
+        text-transform: uppercase;
+    }
+}
+
+// Estilos para el contenido de las pestañas
+.tab-content {
+    .tab-pane {
+        padding: $spacer;
+        display: none;
+
+        &.active {
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+    }
+}
+
+// Estilos adicionales para los elementos dentro de las pestañas
+.asset-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $spacer;
+
+    &.asset-top {
+        flex-direction: column;
+    }
+
+    &.asset-left {
+        flex-direction: row;
+    }
+
+    &.asset-right {
+        flex-direction: row-reverse;
+    }
+
+    .tab-icon {
+        margin-right: 0.5rem;
+        color: $primary;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+    }
+
+    .menu-item-text {
+        font-size: 1rem;
+        font-weight: normal;
+        color: $secondary;
+    }
+}
+
+// Estilos adicionales para la visualización de tabs
+.tabs-content {
+    background-color: $secondary;
+    padding: $spacer;
+    border-radius: $border-radius;
+    margin-top: 1rem;
+}
+
+.menu-title {
+    margin-bottom: $spacer;
+
+    .title {
+        font-size: 1.25rem;
+        color: $primary;
+        margin-bottom: 0.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        color: $secondary;
+    }
+}
+
+.tab-pane {
+    background-color: $white;
+    padding: $spacer;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+    &.active {
+        background-color: $white;
+    }
+}
+
+// Responsive
+@media (max-width: 768px) {
+    .nav-tabs {
+        display: block;
+    }
+
+    .nav-item {
+        display: inline-block;
+        margin-right: $spacer;
+    }
+}

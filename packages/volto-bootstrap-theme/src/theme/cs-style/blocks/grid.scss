@@ -1,0 +1,70 @@
+// Personalización del sistema de grid de Bootstrap
+
+.container {
+    max-width: 1200px; // Ajuste del ancho máximo del contenedor
+    padding: 0 15px; // Espaciado interno
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class^="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+// Personalización de columnas según tamaño de pantalla
+
+@media (min-width: 576px) {
+    .col-sm {
+        flex: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md {
+        flex: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl {
+        flex: 1;
+    }
+}
+
+// Asegurar que las columnas sean responsivas y tengan el mismo alto si es necesario
+.row.align-items-stretch {
+    align-items: stretch;
+}
+
+// Personalización del espacio entre columnas
+.gap-1 {
+    gap: 0.25rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-3 {
+    gap: 1rem;
+}
+
+.gap-4 {
+    gap: 1.5rem;
+}
+
+.gap-5 {
+    gap: 3rem;
+}
