@@ -33,8 +33,6 @@
     "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
   },
   "dependencies": {
-    "@plone/volto": "workspace:*",
-    "@plone/registry": "workspace:*",
     "@codesyntax/volto-bootstrap-theme": "workspace:*",
     "@eeacms/volto-tabs-block": "workspace:*"
   },
