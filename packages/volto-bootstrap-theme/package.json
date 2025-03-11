@@ -14,7 +14,7 @@
   "homepage": "https://github.com/collective/volto-bootstrap-theme#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/codesyntax/volto-bootstrap-theme-cs.git"
+    "url": "git+ssh://git@github.com/codesyntax/volto-bootstrap-theme.git"
   },
   "publishConfig": {
     "access": "public"
