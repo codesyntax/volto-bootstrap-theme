@@ -4,11 +4,8 @@
 In this section, we will go through the components that have been edited in the ``volto-bootstrap-theme``. For each component, we will explain what has been changed and how the component works in the context of the theme.
 
 ## Button Block
-
-.. image:: /_static/button.png
-   :alt: img btn 
-.. image:: /_static/button_edit.png
-   :alt: img btn edit
+![img btn ](/_static/button.png)
+![img btn edit](/_static/button_edit.png)
 
 ### What Has Changed?
 
@@ -34,9 +31,7 @@ When editing, users can:
 The block is fully responsive, ensuring the button adapts to various screen sizes while maintaining Bootstrap’s consistent styling.
 
 ## Accordion Block
-
-.. image:: /_static/accordion.png
-   :alt: img accordion 
+![img accordion ](/_static/accordion.png)
 
 ### What Has Changed?
 
@@ -52,9 +47,7 @@ The Accordion Block functions the same way as the default Volto accordion block.
 With this update, the accordion now seamlessly integrates Bootstrap’s responsive behavior and animation, ensuring a smoother and more visually appealing interaction.
 
 ## Slider Block
-
-.. image:: /_static/slider.png
-   :alt: img slider 
+![img slider  ](/_static/slider.png)
 
 ### What Has Changed?
 
@@ -70,9 +63,7 @@ The Slider Block continues to function as before, allowing users to create image
 With this update, the block now leverages Bootstrap’s responsive behavior and animations, ensuring smooth transitions and an improved user experience across all devices.
 
 ## Tabs Block
-
-.. image:: /_static/tabs.png
-   :alt: img tabs 
+![img tabs  ](/_static/tabs.png)
 
 ### What Has Changed?
 
@@ -86,9 +77,7 @@ The Tabs Block has been updated to integrate Bootstrap styles and simplify its f
 Users no longer need to select a variation, as the Tabs Block now has a single default layout. Other configuration options, such as adding, reordering, and customizing tab labels, remain unchanged.
 
 ## Column And Grid Blocks
-
-.. image:: /_static/columnAndGrid.png
-   :alt: img tabs 
+![img column and grid  ](/_static/columnAndGrid.png)
 
 ### What Has Changed?
 
