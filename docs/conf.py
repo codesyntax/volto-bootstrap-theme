@@ -29,7 +29,7 @@ html_static_path = ['_static']
 
 
 
-with open(os.path.join(os.path.abspath("."), "../frontend/package.json"), "r") as package_json:
+with open(os.path.join(os.path.abspath("."), "../packages/volto-bootstrap-theme/package.json"), "r") as package_json:
     data = package_json.read()
 
 version_from_package_json = json.loads(data)["version"]
