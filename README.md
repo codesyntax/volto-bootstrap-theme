@@ -201,3 +201,5 @@ The project is licensed under the MIT license.
 ## Credits and Acknowledgements 🙏
 
 Generated using [Cookieplone (0.8.4)](https://github.com/plone/cookieplone) and [cookieplone-templates (4ef2c3b)](https://github.com/plone/cookieplone-templates/commit/4ef2c3bc541230519660d3d93adc3b49edeb369a) on 2025-03-10 15:18:30.642759. A special thanks to all contributors and supporters!
+
+You can find the documentation of this package at https://volto-bootstrap-theme.readthedocs.io.
