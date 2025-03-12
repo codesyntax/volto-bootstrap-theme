@@ -24,4 +24,5 @@ By using `@codesyntax/volto-bootstrap-theme`, you can take advantage of Bootstra
 installation
 editedComponents
 customization
+new_project
 
