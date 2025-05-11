@@ -40,19 +40,19 @@ const Footer = () => {
 
   const socialLinks = useNetworks();
 
-  console.log('footerImage', footerImage);
-
   return (
     <footer id="mainfooter">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
             <div className="row">
-              <div className="col-6 col-lg-12">
-                <Image src={footerImage.download} alt="" />
-              </div>
-              <div className="col-6 col-lg-12">
-                {(footerAddressLineOne || footerAddressLineTwo) && (
+              {footerImage && (
+                <div className="col-6 col-lg-12">
+                  <Image src={footerImage.download} alt="" />
+                </div>
+              )}
+              {(footerAddressLineOne || footerAddressLineTwo) && (
+                <div className="col-6 col-lg-12">
                   <address className="my-3">
                     {footerAddressLineOne && (
                       <p className="mb-lg-0 mb-3">{footerAddressLineOne}</p>
@@ -61,8 +61,8 @@ const Footer = () => {
                       <p className="mb-0">{footerAddressLineTwo}</p>
                     )}
                   </address>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           </div>
           {footerLinks.length > 0 && (
