@@ -22,19 +22,19 @@ Create a new Volto project (you can skip this step if you already have one):
 
 ```
 npm install -g yo @plone/generator-volto
-yo @plone/volto my-volto-project --addon volto-bootstrap-theme
+yo @plone/volto my-volto-project --addon @codesyntax/volto-bootstrap-theme
 cd my-volto-project
 ```
 
-Add `volto-bootstrap-theme` to your package.json:
+Add `@codesyntax/volto-bootstrap-theme` to your package.json:
 
 ```JSON
 "addons": [
-    "volto-bootstrap-theme"
+    "@codesyntax/volto-bootstrap-theme"
 ],
 
 "dependencies": {
-    "volto-bootstrap-theme": "*"
+    "@codesyntax/volto-bootstrap-theme": "*"
 }
 ```
 
@@ -52,24 +52,24 @@ yarn start
 
 ### Volto 18 and later
 
-Add `volto-bootstrap-theme` to your `package.json`:
+Add `@codesyntax/volto-bootstrap-theme` to your `package.json`:
 
 ```json
 "dependencies": {
-    "volto-bootstrap-theme": "*"
+    "@codesyntax/volto-bootstrap-theme": "*"
 }
 ```
 
-Add `volto-bootstrap-theme` to your `volto.config.js`:
+Add `@codesyntax/volto-bootstrap-theme` to your `volto.config.js`:
 
 ```javascript
-const addons = ['volto-bootstrap-theme'];
+const addons = ['@codesyntax/volto-bootstrap-theme'];
 ```
 
 If this package provides a Volto theme, and you want to activate it, then add the following to your `volto.config.js`:
 
 ```javascript
-const theme = 'volto-bootstrap-theme';
+const theme = '@codesyntax/volto-bootstrap-theme';
 ```
 
 ## Test installation

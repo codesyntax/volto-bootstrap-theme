@@ -33,6 +33,8 @@
     "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
   },
   "dependencies": {
+    "@plone/registry": "workspace:*",
+    "@plone/volto": "workspace:*",
     "@codesyntax/volto-bootstrap-theme": "workspace:*",
     "@eeacms/volto-tabs-block": "workspace:*"
   },
@@ -45,5 +47,5 @@
       "react-refresh": "^0.14.2"
     }
   },
-  "packageManager": "pnpm@9.1.1"
+  "packageManager": "pnpm@9.14.1"
 }

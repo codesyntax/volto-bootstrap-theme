@@ -29,7 +29,7 @@ module.exports = {
           ['@plone/volto-slate', `${coreLocation}/packages/volto-slate/src`],
           ['@plone/registry', `${coreLocation}/packages/registry/src`],
           [
-            'volto-bootstrap-theme',
+            '@codesyntax/volto-bootstrap-theme',
             './packages/volto-bootstrap-theme/src',
           ],
           ...addonAliases,

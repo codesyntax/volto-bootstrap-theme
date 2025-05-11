@@ -26,7 +26,7 @@ PLONE_VERSION=6.1.1
 DOCKER_IMAGE=plone/server-dev:${PLONE_VERSION}
 DOCKER_IMAGE_ACCEPTANCE=plone/server-acceptance:${PLONE_VERSION}
 
-ADDON_NAME='volto-bootstrap-theme'
+ADDON_NAME='@codesyntax/volto-bootstrap-theme'
 
 .PHONY: help
 help: ## Show this help
