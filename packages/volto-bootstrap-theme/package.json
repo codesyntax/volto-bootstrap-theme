@@ -26,7 +26,8 @@
     "@kitconcept/volto-button-block",
     "@eeacms/volto-columns-block",
     "@eeacms/volto-block-style",
-    "@eeacms/volto-tabs-block"
+    "@eeacms/volto-tabs-block",
+    "@plonegovbr/volto-social-media"
   ],
   "theme": "@codesyntax/volto-bootstrap-theme",
   "scripts": {
@@ -46,7 +47,8 @@
     "@kitconcept/volto-button-block": "*",
     "@eeacms/volto-columns-block": "^8.0.1",
     "@eeacms/volto-block-style": "*",
-    "@plone/components": "workspace:^"
+    "@plone/components": "workspace:^",
+    "@plonegovbr/volto-social-media": "2.0.0-alpha.5"
   },
   "peerDependencies": {
     "react": "18.2.0",
