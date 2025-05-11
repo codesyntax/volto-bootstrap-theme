@@ -60,7 +60,7 @@ const Logo = () => {
 
   return (
     <div id="logo" className="d-none d-lg-block">
-      {navRootPath == pathname ? (
+      {navRootPath === pathname ? (
         <h1>
           <LogoComponent navRootPath={navRootPath} />
         </h1>
