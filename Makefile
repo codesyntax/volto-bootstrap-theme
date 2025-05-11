@@ -11,9 +11,10 @@ MAKEFLAGS+=--no-builtin-rules
 CURRENT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 GIT_FOLDER=$(CURRENT_DIR)/.git
 
-PROJECT_NAME=volto-light-theme
+PROJECT_NAME=volto-bootstrap-theme
 IMAGE_NAME=ghcr.io/codesyntax/voltobootstraptheme
 
+PLONE_VERSION=6.1.1
 VOLTO_VERSION=$(shell cat frontend/mrs.developer.json | python -c "import sys, json; print(json.load(sys.stdin)['core']['tag'])")
 
 # We like colors
