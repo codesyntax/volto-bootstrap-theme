@@ -9,12 +9,17 @@ export default function install(config) {
           return {
             'expand.inherit.behaviors': querystring[
               'expand.inherit.behaviors'
-            ].concat(',', 'voltobootstraptheme.navroot_footer_links'),
+            ].concat(
+              ',',
+              'voltobootstraptheme.navroot_footer_links',
+              ',',
+              'voltobootstraptheme.footer',
+            ),
           };
         } else {
           return {
             'expand.inherit.behaviors':
-              'voltobootstraptheme.navroot_footer_links',
+              'voltobootstraptheme.navroot_footer_links,voltobootstraptheme.footer',
           };
         }
       },

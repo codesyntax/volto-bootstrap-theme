@@ -24,10 +24,16 @@ const Footer = () => {
       'voltobootstraptheme.navroot_footer_links'
     ]?.data?.['navroot_footer_links'] || [];
 
-  // filter out invalida values: without href, with invalid href
+  // filter out invalid values: without href, with invalid href
   footerLinks = footerLinks.filter(
     (item) => item?.href.length > 0 && item?.href[0] && item?.href[0]?.['@id'],
   );
+
+  const footerAddressData =
+    content?.['@components']?.inherit?.['voltobootstraptheme.footer']?.data;
+
+  const footerAddressLineOne = footerAddressData?.footer_address_line_one || '';
+  const footerAddressLineTwo = footerAddressData?.footer_address_line_two || '';
 
   const socialLinks = useNetworks();
 
@@ -38,7 +44,18 @@ const Footer = () => {
           <div className="col-md-6">
             <div className="row">
               <div className="col-6 col-lg-12"></div>
-              <div className="col-6 col-lg-12"></div>
+              <div className="col-6 col-lg-12">
+                {(footerAddressLineOne || footerAddressLineTwo) && (
+                  <address className="my-3">
+                    {footerAddressLineOne && (
+                      <p className="mb-lg-0 mb-3">{footerAddressLineOne}</p>
+                    )}
+                    {footerAddressLineTwo && (
+                      <p className="mb-0">{footerAddressLineTwo}</p>
+                    )}
+                  </address>
+                )}
+              </div>
             </div>
           </div>
           {footerLinks.length > 0 && (
