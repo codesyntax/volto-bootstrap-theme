@@ -22,7 +22,7 @@ YELLOW=`tput setaf 3`
 GIT_FOLDER=$(CURRENT_DIR)/.git
 PRE_COMMIT=pipx run --spec 'pre-commit==3.7.1' pre-commit
 
-PLONE_VERSION=6
+PLONE_VERSION=6.1.1
 DOCKER_IMAGE=plone/server-dev:${PLONE_VERSION}
 DOCKER_IMAGE_ACCEPTANCE=plone/server-acceptance:${PLONE_VERSION}
 
