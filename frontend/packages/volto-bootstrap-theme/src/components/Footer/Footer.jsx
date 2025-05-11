@@ -6,9 +6,10 @@
 import React from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
 import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
-import { flattenToAppURL, addAppURL } from '@plone/volto/helpers/Url/Url';
+import { flattenToAppURL } from '@plone/volto/helpers/Url/Url';
 import { useNetworks } from '@plonegovbr/volto-social-media/hooks/useNetworks';
 import SocialNetwork from '@plonegovbr/volto-social-media/components/SocialNetwork/SocialNetwork';
+import Image from '@plone/volto/components/theme/Image/Image';
 
 const Footer = () => {
   const { siteActions = [] } = useSelector(
@@ -29,13 +30,17 @@ const Footer = () => {
     (item) => item?.href.length > 0 && item?.href[0] && item?.href[0]?.['@id'],
   );
 
-  const footerAddressData =
+  const footerData =
     content?.['@components']?.inherit?.['voltobootstraptheme.footer']?.data;
 
-  const footerAddressLineOne = footerAddressData?.footer_address_line_one || '';
-  const footerAddressLineTwo = footerAddressData?.footer_address_line_two || '';
+  const footerAddressLineOne = footerData?.footer_address_line_one || '';
+  const footerAddressLineTwo = footerData?.footer_address_line_two || '';
+
+  const footerImage = footerData?.footer_logo;
 
   const socialLinks = useNetworks();
+
+  console.log('footerImage', footerImage);
 
   return (
     <footer id="mainfooter">
@@ -43,7 +48,9 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="row">
-              <div className="col-6 col-lg-12"></div>
+              <div className="col-6 col-lg-12">
+                <Image src={footerImage.download} alt="" />
+              </div>
               <div className="col-6 col-lg-12">
                 {(footerAddressLineOne || footerAddressLineTwo) && (
                   <address className="my-3">
