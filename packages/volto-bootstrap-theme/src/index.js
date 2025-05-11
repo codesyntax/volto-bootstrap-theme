@@ -1,5 +1,7 @@
 import installComponents from './config/components';
 import installBlocks from './config/blocks';
+import installWidgets from './config/widgets';
+import installApiExpanders from './config/apiExpanders';
 
 const applyConfig = (config) => {
   // Default Settings
@@ -12,6 +14,10 @@ const applyConfig = (config) => {
   installComponents(config);
   // Install block configuration
   installBlocks(config);
+  // Install custom widgets
+  installWidgets(config);
+  // Install apiExpanders
+  installApiExpanders(config);
 
   return config;
 };

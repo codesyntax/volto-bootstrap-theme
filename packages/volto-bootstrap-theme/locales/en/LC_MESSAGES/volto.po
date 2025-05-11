@@ -11,14 +11,39 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. Default: "Add link"
+#: components/Widgets/schema/navrootFooterLinksSchema
+msgid "Add link"
+msgstr ""
+
+#. Default: "Link"
+#: components/Widgets/schema/navrootFooterLinksSchema
+msgid "Link"
+msgstr ""
+
 #. Default: "Logo of {siteName}"
 #: components/Logo/Logo
 msgid "Logo of"
 msgstr ""
 
+#. Default: "Open in a new tab"
+#: components/Widgets/schema/navrootFooterLinksSchema
+msgid "Open in a new tab"
+msgstr ""
+
 #. Default: "Switch to"
 #: components/LanguageSelector/LanguageSelector
 msgid "Switch to"
+msgstr ""
+
+#. Default: "Target"
+#: components/Widgets/schema/navrootFooterLinksSchema
+msgid "Target"
+msgstr ""
+
+#. Default: "Title"
+#: components/Widgets/schema/navrootFooterLinksSchema
+msgid "Title"
 msgstr ""
 
 #. Default: "Toggle navigation"
