@@ -48,6 +48,7 @@
     "@eeacms/volto-columns-block": "^8.0.1",
     "@eeacms/volto-block-style": "*",
     "@plone/components": "workspace:^",
+    "@plone/volto-slate": "workspace:^",
     "@plonegovbr/volto-social-media": "2.0.0-alpha.5"
   },
   "peerDependencies": {
