@@ -53,12 +53,16 @@ const Footer = () => {
               )}
               {(footerAddressLineOne || footerAddressLineTwo) && (
                 <div className="col-6 col-lg-12">
-                  <address className="my-3">
+                  <address className="address-container">
                     {footerAddressLineOne && (
-                      <p className="mb-lg-0 mb-3">{footerAddressLineOne}</p>
+                      <p className="address-first-line">
+                        {footerAddressLineOne}
+                      </p>
                     )}
                     {footerAddressLineTwo && (
-                      <p className="mb-0">{footerAddressLineTwo}</p>
+                      <p className="address-second-line">
+                        {footerAddressLineTwo}
+                      </p>
                     )}
                   </address>
                 </div>

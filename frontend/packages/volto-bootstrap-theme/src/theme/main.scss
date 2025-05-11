@@ -7,6 +7,19 @@
   // Utilities
   @import 'bootstrap/scss/utilities/api';
   // scss-docs-end import-stack
+
+  .address-container {
+    @extend .my-3;
+  }
+
+  .address-first-line {
+    @extend .mb-lg-0;
+    @extend .mb-3;
+  }
+
+  .address-second-line {
+    @extend .mb-0;
+  }
 }
 
 /* No CSS beyond this point except next line */
