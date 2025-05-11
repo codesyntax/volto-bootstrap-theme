@@ -1,0 +1,32 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="cs.volto.bootstraptheme"
+    >
+
+  <genericsetup:registerProfile
+      name="default"
+      title="cs.volto.boostraptheme: Install"
+      description="Package to configure a new cs.volto.boostraptheme site"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="cs.volto.boostraptheme: Uninstall"
+      description="Uninstall cs.volto.boostraptheme setup."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      />
+
+  <!-- Hide Uninstall Profile-->
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="cs.volto.bootstraptheme"
+      />
+
+
+  <include package=".upgrades" />
+
+</configure>

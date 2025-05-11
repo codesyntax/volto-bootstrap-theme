@@ -1,205 +1,46 @@
-# @codesyntax/volto-bootstrap-theme (volto-bootstrap-theme)
-
-A new add-on for Volto
-
-[![npm](https://img.shields.io/npm/v/volto-bootstrap-theme)](https://www.npmjs.com/package/volto-bootstrap-theme)
-[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://collective.github.io/volto-bootstrap-theme/)
-[![Code analysis checks](https://github.com/collective/volto-bootstrap-theme/actions/workflows/code.yml/badge.svg)](https://github.com/collective/volto-bootstrap-theme/actions/workflows/code.yml)
-[![Unit tests](https://github.com/collective/volto-bootstrap-theme/actions/workflows/unit.yml/badge.svg)](https://github.com/collective/volto-bootstrap-theme/actions/workflows/unit.yml)
-
-## Features
-
-<!-- List your awesome features here -->
-
-## Installation
-
-To install your project, you must choose the method appropriate to your version of Volto.
+# Volto Bootstrap Theme
 
 
-### Volto 17 and earlier
-
-Create a new Volto project (you can skip this step if you already have one):
-
-```
-npm install -g yo @plone/generator-volto
-yo @plone/volto my-volto-project --addon @codesyntax/volto-bootstrap-theme
-cd my-volto-project
-```
-
-Add `@codesyntax/volto-bootstrap-theme` to your package.json:
-
-```JSON
-"addons": [
-    "@codesyntax/volto-bootstrap-theme"
-],
-
-"dependencies": {
-    "@codesyntax/volto-bootstrap-theme": "*"
-}
-```
-
-Download and install the new add-on by running:
-
-```
-yarn install
-```
-
-Start volto with:
-
-```
-yarn start
-```
-
-### Volto 18 and later
-
-Add `@codesyntax/volto-bootstrap-theme` to your `package.json`:
-
-```json
-"dependencies": {
-    "@codesyntax/volto-bootstrap-theme": "*"
-}
-```
-
-Add `@codesyntax/volto-bootstrap-theme` to your `volto.config.js`:
-
-```javascript
-const addons = ['@codesyntax/volto-bootstrap-theme'];
-```
-
-If this package provides a Volto theme, and you want to activate it, then add the following to your `volto.config.js`:
-
-```javascript
-const theme = '@codesyntax/volto-bootstrap-theme';
-```
-
-## Test installation
-
-Visit http://localhost:3000/ in a browser, login, and check the awesome new features.
+Volto Bootstrap Theme (or VBT) is to have a base Volto Theme based on [Bootstrap](https://getbootstrap.com/) so that CodeSyntax can bootstrap its Volto sites with a basic customization.
 
 
-## Development
-
-The development of this add-on is done in isolation using a new approach using pnpm workspaces and latest `mrs-developer` and other Volto core improvements.
-For this reason, it only works with pnpm and Volto 18 (currently in alpha).
+## Documentation
+You can find the documentation of this package at https://volto-bootstrap-theme.readthedocs.io
 
 
-### Pre-requisites
+## Contributing
 
--   [Node.js](https://6.docs.plone.org/install/create-project.html#node-js)
--   [Make](https://6.docs.plone.org/install/create-project.html#make)
--   [Docker](https://6.docs.plone.org/install/create-project.html#docker)
+Contributions are welcome! If you find any issues or want to suggest improvements, please check out:
 
+- [Source Code](https://github.com/codesyntax/volto-bootstrap-theme/) 💻
+- [Issue Tracker](https://github.com/codesyntax/volto-bootstrap-theme/issues) 🐛
 
-### Make convenience commands
+Every pull request requires a [Change log entry](https://6.docs.plone.org/contributing/index.html#change-log-entry). The location of the `news` folder is the following:
 
-Run `make help` to list the available commands.
+- **backend**: `backend/news`
+- **frontend**: `frontend/packages/volto-light-theme/news`
 
-```text
-help                             Show this help
-install                          Installs the add-on in a development environment
-start                            Starts Volto, allowing reloading of the add-on during development
-build                            Build a production bundle for distribution of the project with the add-on
-i18n                             Sync i18n
-ci-i18n                          Check if i18n is not synced
-format                           Format codebase
-lint                             Lint, or catch and remove problems, in code base
-release                          Release the add-on on npmjs.org
-release-dry-run                  Dry-run the release of the add-on on npmjs.org
-test                             Run unit tests
-ci-test                          Run unit tests in CI
-backend-docker-start             Starts a Docker-based backend for development
-storybook-start                  Start Storybook server on port 6006
-storybook-build                  Build Storybook
-acceptance-frontend-dev-start    Start acceptance frontend in development mode
-acceptance-frontend-prod-start   Start acceptance frontend in production mode
-acceptance-backend-start         Start backend acceptance server
-ci-acceptance-backend-start      Start backend acceptance server in headless mode for CI
-acceptance-test                  Start Cypress in interactive mode
-ci-acceptance-test               Run cypress tests in headless mode for CI
-```
+### Project Structure
 
-### Development environment set up
+This monorepo hosts two packages:
 
-Install package requirements.
+- **backend/**: Python package `cs.volto.bootstraptheme` providing Dexterity behaviors and example content.
+- **frontend/**: React package `@codesyntax/volto-bootstrap-theme` providing the theme.
 
-```shell
-make install
-```
+### Internationalization
 
-### Start developing
+Easily generate translation files for both Plone and Volto:
 
-Start the backend.
-
-```shell
-make backend-docker-start
-```
-
-In a separate terminal session, start the frontend.
-
-```shell
-make start
-```
-
-### Lint code
-
-Run ESlint, Prettier, and Stylelint in analyze mode.
-
-```shell
-make lint
-```
-
-### Format code
-
-Run ESlint, Prettier, and Stylelint in fix mode.
-
-```shell
-make format
-```
-
-### i18n
-
-Extract the i18n messages to locales.
-
-```shell
+```sh
 make i18n
 ```
 
-### Unit tests
+## Credits & Acknowledgements 🙏
 
-Run unit tests.
+Thanks to [kitconcept GmbH](https://kitconcept.com) for creating and mantaining [volto-light-theme](https://github.com/kitconcept/volto-light-theme).
 
-```shell
-make test
-```
+This repo's structure, the basic package, and many concepts have been borrowed from there.
 
-### Run Cypress tests
+Thanks to [Plone comunnyti](https://plone.org) for creating Plone and Volto.
 
-Run each of these steps in separate terminal sessions.
-
-In the first session, start the frontend in development mode.
-
-```shell
-make acceptance-frontend-dev-start
-```
-
-In the second session, start the backend acceptance server.
-
-```shell
-make acceptance-backend-start
-```
-
-In the third session, start the Cypress interactive test runner.
-
-```shell
-make acceptance-test
-```
-
-## License
-
-The project is licensed under the MIT license.
-
-## Credits and Acknowledgements 🙏
-
-Generated using [Cookieplone (0.8.4)](https://github.com/plone/cookieplone) and [cookieplone-templates (4ef2c3b)](https://github.com/plone/cookieplone-templates/commit/4ef2c3bc541230519660d3d93adc3b49edeb369a) on 2025-03-10 15:18:30.642759. A special thanks to all contributors and supporters!
-
-You can find the documentation of this package at https://volto-bootstrap-theme.readthedocs.io.
+This package is developed and maintained by [CodeSyntax](https://www.codesyntax.com) ❤️.

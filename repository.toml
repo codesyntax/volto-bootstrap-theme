@@ -1,0 +1,30 @@
+[repository]
+name = "Volto Bootstrap Theme"
+managed_by_uv = false
+changelog = "CHANGELOG.md"
+version = "version.txt"
+compose = "docker-compose.yml"
+
+[repository.towncrier]
+section = "Project"
+settings = "towncrier.toml"
+
+[backend]
+path = "backend"
+
+[backend.package]
+name = "cs.volto.bootstraptheme"
+path = "backend"
+changelog = "backend/CHANGELOG.md"
+towncrier_settings = "backend/pyproject.toml"
+publish = true
+
+[frontend]
+path = "frontend"
+
+[frontend.package]
+name = "@codesyntax/volto-boostrap-theme"
+path = "frontend/packages/volto-boostrap-theme"
+changelog = "frontend/packages/volto-boostrap-theme/CHANGELOG.md"
+towncrier_settings = "frontend/packages/volto-boostrap-theme/towncrier.toml"
+publish = true

@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="kitconcept.intranet"
+    >
+
+  <include
+      package="plone.behavior"
+      file="meta.zcml"
+      />
+
+  <plone:behavior
+      name="voltobootstraptheme.footer"
+      title="Footer customizations for sites/subsites"
+      description="Set of fields to customize sites and subsites"
+      provides=".footer.IVoltoFooterSettings"
+      />
+
+
+  <plone:behavior
+      name="voltobootstraptheme.navroot_footer_links"
+      title="Links to be shown in the navigation root footer"
+      description="Set of fields to customize sites and subsites"
+      provides=".navroot_footer_links.INavrootFooterLinks"
+      />
+
+
+
+</configure>
