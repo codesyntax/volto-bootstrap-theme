@@ -1,4 +1,3 @@
-import 'react';
 import TextBlockView from '@plone/volto-slate/blocks/Text/TextBlockView';
 
 const BootstrapTextBlockView = (props) => {
