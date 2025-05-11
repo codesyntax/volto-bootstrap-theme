@@ -1,25 +1,17 @@
-import { composeSchema } from '@plone/volto/helpers';
-import { buttonNewProperties } from './components/Blocks/Button/button_type_schema';
+import installComponents from './config/components';
+import installBlocks from './config/blocks';
 
 const applyConfig = (config) => {
-  config.settings = {
-    ...config.settings,
-    isMultilingual: false,
-    supportedLanguages: ['en', 'es', 'eu'],
-    defaultLanguage: 'en',
-  };
+  // Default Settings
+  config.settings.isMultilingual = false;
+  config.settings.supportedLanguages = ['eu', 'es', 'en'];
+  config.settings.defaultLanguage = 'eu';
+  config.settings.navDepth = 2;
 
-
-
-
-  console.log(config.blocks.blocksConfig.__button)
-  config.blocks.blocksConfig.__button = {
-    ...config.blocks.blocksConfig.__button,
-    schemaEnhancer: composeSchema(
-      ({ schema }) => buttonNewProperties(schema)
-
-    ),
-  };
+  // Install components in the componentRegistry
+  installComponents(config);
+  // Install block configuration
+  installBlocks(config);
 
   return config;
 };
