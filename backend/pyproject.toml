@@ -1,12 +1,12 @@
 [project]
 name = "cs.volto.bootstraptheme"
 dynamic = ["version"]
-description = "A new addon for Plone"
+description = "Plone package providing features for @codesyntax/volto-bootstrap-theme"
 readme = "README.md"
 license = "GPL-2.0-only"
 requires-python = ">=3.10"
-authors = [{ name = "Plone Community", email = "collective@plone.org" }]
-keywords = ["CMS", "Plone", "Python"]
+authors = [{ name = "CodeSyntax", email = "plone@codesyntax.com" }]
+keywords = ["CMS", "Plone", "Volto"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Web Environment",
@@ -17,17 +17,15 @@ classifiers = [
     "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "Products.CMFPlone",
+    "Products.CMFPlone>6.0",
     "plone.api",
-    "plone.restapi",
+    "plone.restapi>9.13.2",
     "plone.volto",
-    "plonegovbr.socialmedia",
+    "plonegovbr.socialmedia>1.0.0a5",
 ]
 
 [project.optional-dependencies]
