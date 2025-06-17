@@ -14,7 +14,9 @@ const GridBlockView = (props) => {
   const blocks = data.blocks || {};
 
   return (
-    <div className={cx('block', data['@type'], className, 'container')} style={style}>
+    // <div className={cx('block', data['@type'], className, 'container')} style={style}>
+    <div style={style}>
+
       {data.headline && <h2 className="h2">{data.headline}</h2>}
 
       <div className="row">

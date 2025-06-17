@@ -27,7 +27,8 @@
     "@eeacms/volto-columns-block",
     "@eeacms/volto-block-style",
     "@eeacms/volto-tabs-block",
-    "@plonegovbr/volto-social-media"
+    "@plonegovbr/volto-social-media",
+    "@plone-collective/volto-footer"
   ],
   "theme": "@codesyntax/volto-bootstrap-theme",
   "scripts": {

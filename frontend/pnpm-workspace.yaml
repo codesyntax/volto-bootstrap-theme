@@ -4,3 +4,4 @@ packages:
   - 'packages/volto-bootstrap-theme'
   - 'packages/volto-tabs-block'
   - 'packages/**/packages/*'
+  - 'packages/volto-footer'

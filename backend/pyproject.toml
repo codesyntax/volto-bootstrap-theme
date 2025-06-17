@@ -25,8 +25,8 @@ dependencies = [
     "plone.api",
     "plone.restapi>9.13.2",
     "plone.volto",
-    "plonegovbr.socialmedia>1.0.0a5",
-]
+    "plonegovbr.socialmedia>1.0.0a5"
+    ]
 
 [project.optional-dependencies]
 test = [
@@ -66,6 +66,9 @@ exclude = ["/.github"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/cs"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
 
 [tool.towncrier]
 directory = "news/"

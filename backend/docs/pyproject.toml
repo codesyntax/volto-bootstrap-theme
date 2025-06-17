@@ -36,6 +36,7 @@ dev = [
     "plone-sphinx-theme>=1.4.1",  # Use the latest stable version or a minimum
     "setuptools",  # required by sphinxcontrib.httpexample, remove when it migrates to importlib. See https://github.com/collective/sphinxcontrib-httpexample/issues/106
     "sphinx-autobuild",
+    "collective.volto.footer",
     "sphinx-copybutton",
     "sphinx-design",
     "sphinx-examples",

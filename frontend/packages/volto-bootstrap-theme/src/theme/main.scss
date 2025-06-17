@@ -26,3 +26,11 @@
 /* This import allows third-party addons to load their own "_main.scss" at this point */
 @import 'addonsThemeCustomizationsMain';
 /* No CSS beyond this point */
+
+footer {
+  background-color: green;
+  color: black;
+  /* Para buen contraste */
+  padding: 20px;
+  text-align: center;
+}

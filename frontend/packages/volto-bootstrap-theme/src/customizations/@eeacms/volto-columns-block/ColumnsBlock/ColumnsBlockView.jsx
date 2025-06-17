@@ -11,7 +11,7 @@ import { getStyle } from '@eeacms/volto-columns-block/Styles';
 const ColumnsBlockView = (props) => {
   const location = useLocation();
   const { gridSizes } = config.blocks.blocksConfig[COLUMNSBLOCK];
-  const { data = {}, gridSize = 12, gridCols = [] } = props.data;
+  const { data = {}, gridSize = 12, gridCols = [], className } = props.data;
   const metadata = props.metadata || props.properties;
   const columnList = getColumns(data);
   const customId = props.data?.title
@@ -21,8 +21,8 @@ const ColumnsBlockView = (props) => {
     ?.replace(/\s+/gi, '-');
 
   return (
-    <div className="columns-view container" id={customId}>
-      <div className={cx('row', props.data.reverseWrap && 'flex-row-reverse')}>
+    <div className={cx("columns-view container", className)} id={customId}>
+      <div className={cx('row', props.data.reverseWrap && 'flex-row-reverse', className)}>
         {columnList.map(([id, column], index) => {
           const colSize = gridCols[index] ? `col-${gridCols[index]}` : 'col';
 

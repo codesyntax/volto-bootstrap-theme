@@ -5,5 +5,9 @@
     "url": "git@github.com:plone/volto.git",
     "https": "https://github.com/plone/volto.git",
     "tag": "18.19.0"
+  },
+  "volto-footer-dev": {
+    "local": "packages/volto-footer",
+    "output": "packages/volto-footer"
   }
 }

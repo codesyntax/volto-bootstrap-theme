@@ -37,7 +37,8 @@
     "@plone/volto": "workspace:*",
     "@plone/volto-slate": "workspace:*",
     "@codesyntax/volto-bootstrap-theme": "workspace:*",
-    "@eeacms/volto-tabs-block": "workspace:*"
+    "@eeacms/volto-tabs-block": "workspace:*",
+    "@plone-collective/volto-footer": "workspace:*"
   },
   "devDependencies": {
     "mrs-developer": "^2.2.0"

@@ -1,8 +1,8 @@
 import React from 'react';
-import { ConditionalLink } from '@plone/volto/components';
+import { ConditionalLink, MaybeWrap } from '@plone/volto/components';
 import { defineMessages, useIntl } from 'react-intl';
+import cx from 'classnames';
 // import './styles.scss';
-
 const messages = defineMessages({
     ButtonText: {
         id: 'Button text',
@@ -11,7 +11,7 @@ const messages = defineMessages({
 });
 
 const View = (props) => {
-    const { data, isEditMode, blocksConfig } = props;
+    const { data, isEditMode, blocksConfig, className } = props;
     const intl = useIntl();
     const isBlockModelv3 = blocksConfig?.__button?.blockModel === 3;
 
@@ -43,12 +43,13 @@ const View = (props) => {
     };
 
     const button = (
-        <button className={getButtonClasses()}>
+        <button className={cx(getButtonClasses(), className)}>
             {data.title || intl.formatMessage(messages.ButtonText)}
         </button>
     );
 
     return (
+
         <div className="button-container bootstrap-container">
             {isEditMode ? (
                 button
