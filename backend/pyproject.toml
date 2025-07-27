@@ -21,11 +21,11 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "Products.CMFPlone>6.0",
+    "Products.CMFPlone>6.1",
     "plone.api",
     "plone.restapi>9.13.2",
     "plone.volto",
-    "plonegovbr.socialmedia>1.0.0a5",
+    "plonegovbr.socialmedia==2.0.0a6",
 ]
 
 [project.optional-dependencies]

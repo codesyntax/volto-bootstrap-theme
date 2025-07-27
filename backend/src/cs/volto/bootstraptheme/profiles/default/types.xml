@@ -2,9 +2,13 @@
 <object meta_type="Plone Types Tool"
         name="portal_types"
 >
-  <!--
+
   <object meta_type="Dexterity FTI"
-          name="MyType"
+          name="Plone Site"
   />
--->
+  <object meta_type="Dexterity FTI"
+          name="LRF"
+  />
+
+
 </object>

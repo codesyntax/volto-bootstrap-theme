@@ -13,14 +13,12 @@ import json
 
 OBJECT_LIST_DEFAULT_VALUE = []
 
-OBJECT_LIST = json.dumps(
-    {
-        "type": "array",
-        "items": {
-            "type": "object",
-        },
-    }
-)
+OBJECT_LIST = json.dumps({
+    "type": "array",
+    "items": {
+        "type": "object",
+    },
+})
 
 
 @provider(IFormFieldProvider)
@@ -31,29 +29,9 @@ class IVoltoFooterSettings(model.Schema):
         "footer",
         label=_("Footer customizations"),
         fields=[
-            "footer_address_line_one",
-            "footer_address_line_two",
             "footer_logo",
             "footer_logo_link",
         ],
-    )
-
-    footer_address_line_one = Text(
-        title=_("Footer address line one"),
-        description=_(
-            "The footer address that appears below the footer logo in the"
-            " first footer column."
-        ),
-        required=False,
-    )
-
-    footer_address_line_two = Text(
-        title=_("Footer address line two"),
-        description=_(
-            "The footer address that appears below the footer logo in the"
-            " first footer column."
-        ),
-        required=False,
     )
 
     footer_logo = NamedBlobImage(
