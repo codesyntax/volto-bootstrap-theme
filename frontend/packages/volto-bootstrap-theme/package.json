@@ -21,12 +21,6 @@
   },
   "addons": [
     "@codesyntax/volto-bootstrap-theme",
-    "@eeacms/volto-accordion-block",
-    "@kitconcept/volto-slider-block",
-    "@kitconcept/volto-button-block",
-    "@eeacms/volto-columns-block",
-    "@eeacms/volto-block-style",
-    "@eeacms/volto-tabs-block",
     "@plonegovbr/volto-social-media"
   ],
   "theme": "@codesyntax/volto-bootstrap-theme",
@@ -38,15 +32,8 @@
     "release-alpha": "release-it --preRelease=alpha"
   },
   "dependencies": {
-    "@eeacms/volto-accordion-block": "^10.4.6",
     "bootstrap": "^5.3.3",
     "sass": "^1.85.0",
-    "@kitconcept/volto-slider-block": "^6.3.1",
-    "embla-carousel-autoplay": "^8.0.0",
-    "embla-carousel-react": "^8.0.0",
-    "@kitconcept/volto-button-block": "*",
-    "@eeacms/volto-columns-block": "^8.0.1",
-    "@eeacms/volto-block-style": "*",
     "@plone/components": "workspace:^",
     "@plone/volto-slate": "workspace:^",
     "@plonegovbr/volto-social-media": "2.0.0-alpha.6"
