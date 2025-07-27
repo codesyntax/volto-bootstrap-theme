@@ -1,15 +1,41 @@
 import { composeSchema } from '@plone/volto/helpers';
-import { buttonNewProperties } from '@codesyntax/volto-bootstrap-theme/components/Blocks/Button/button_type_schema';
+import homeBand from '@plone/volto/icons/image-wide.svg';
 
-import TextBlockView from '@codesyntax/volto-bootstrap-theme/components/Blocks/Text/View.jsx';
+import FeaturedBlockView from '../components/Blocks/Featured/View';
+import FeaturedBlockSchema from '../components/Blocks/Featured/schema';
+import FeaturedBlockViewVariationImageLeft from '../components/Blocks/Featured/VariationImageLeftView.jsx';
+import FeaturedBlockViewVariationImageRight from '../components/Blocks/Featured/VariationImageRightView.jsx';
+
 export default function install(config) {
-  //console.log(config.blocks.blocksConfig.__button);
-  config.blocks.blocksConfig.__button = {
-    ...config.blocks.blocksConfig.__button,
-    schemaEnhancer: composeSchema(({ schema }) => buttonNewProperties(schema)),
-  };
+  // disable gridBlock and teaser
+  config.blocks.blocksConfig.gridBlock = {};
+  config.blocks.blocksConfig.teaser = {};
 
-  config.blocks.blocksConfig.slate.view = TextBlockView;
+  config.blocks.blocksConfig._vbtFeatured = {
+    id: '_vbtFeatured',
+    title: 'Featured',
+    view: FeaturedBlockView,
+    //edit: BlockEdit,
+    blockSchema: FeaturedBlockSchema,
+    icon: homeBand,
+    sidebarTab: 1,
+    group: 'common',
+    //dataAdapter: FeaturedBlockDataAdapter,
+    variations: [
+      {
+        id: 'variation01',
+        title: 'Image on the left',
+        isDefault: true,
+        template: FeaturedBlockViewVariationImageLeft,
+      },
+      {
+        id: 'variation02',
+        title: 'Image on the right',
+        isDefault: false,
+        template: FeaturedBlockViewVariationImageRight,
+      },
+    ],
+  };
 
   return config;
 }
