@@ -52,10 +52,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="row">
-          {footerLinks.length > 0 && (
-            <div className="col-md-6">
-              <div className="text-center text-lg-end pb-lg-4">
+        <div className="row">
+          <div className="col-12">
+            {footerLinks.length > 0 && (
+              <div className="text-center pb-lg-4">
                 <ul className="footer-links list-inline m-0">
                   {footerLinks.map((item, key) => (
                     <li className="list-inline-item" key={key}>
@@ -68,7 +68,9 @@ const Footer = () => {
                   ))}
                 </ul>
               </div>
-              <div className="text-center text-lg-end pb-lg-4">
+            )}
+            {socialLinks.length > 0 && (
+              <div className="text-center pb-lg-4">
                 <ul className="footer-links list-inline m-0">
                   {socialLinks.map((item, key) => (
                     <li className="list-inline-item" key={key}>
@@ -77,8 +79,8 @@ const Footer = () => {
                   ))}
                 </ul>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </footer>
