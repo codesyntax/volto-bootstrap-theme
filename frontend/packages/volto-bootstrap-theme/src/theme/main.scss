@@ -1,4 +1,4 @@
-/* This import allows third-party addons to use their own "_variables.scss"at this point */
+/* This import allows third-party addons to use their own "_variables.scss" at this point */
 @import 'addonsThemeCustomizationsVariables';
 
 @import 'bootstrap';
@@ -7,6 +7,13 @@
   // Utilities
   @import 'bootstrap/scss/utilities/api';
   // scss-docs-end import-stack
+
+  $font-size-base: 1.125rem !default;
+
+  #mainheader,
+  footer {
+    background-color: $gray-300;
+  }
 
   .address-container {
     @extend .my-3;

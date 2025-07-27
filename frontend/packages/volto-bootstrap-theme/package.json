@@ -49,7 +49,7 @@
     "@eeacms/volto-block-style": "*",
     "@plone/components": "workspace:^",
     "@plone/volto-slate": "workspace:^",
-    "@plonegovbr/volto-social-media": "2.0.0-alpha.5"
+    "@plonegovbr/volto-social-media": "2.0.0-alpha.6"
   },
   "peerDependencies": {
     "react": "18.2.0",

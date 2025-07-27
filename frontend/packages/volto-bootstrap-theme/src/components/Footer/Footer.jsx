@@ -33,9 +33,6 @@ const Footer = () => {
   const footerData =
     content?.['@components']?.inherit?.['voltobootstraptheme.footer']?.data;
 
-  const footerAddressLineOne = footerData?.footer_address_line_one || '';
-  const footerAddressLineTwo = footerData?.footer_address_line_two || '';
-
   const footerImage = footerData?.footer_logo;
 
   const socialLinks = useNetworks();
@@ -51,24 +48,11 @@ const Footer = () => {
                   <Image src={footerImage.download} alt="" />
                 </div>
               )}
-              {(footerAddressLineOne || footerAddressLineTwo) && (
-                <div className="col-6 col-lg-12">
-                  <address className="address-container">
-                    {footerAddressLineOne && (
-                      <p className="address-first-line">
-                        {footerAddressLineOne}
-                      </p>
-                    )}
-                    {footerAddressLineTwo && (
-                      <p className="address-second-line">
-                        {footerAddressLineTwo}
-                      </p>
-                    )}
-                  </address>
-                </div>
-              )}
             </div>
           </div>
+        </div>
+
+        <div class="row">
           {footerLinks.length > 0 && (
             <div className="col-md-6">
               <div className="text-center text-lg-end pb-lg-4">

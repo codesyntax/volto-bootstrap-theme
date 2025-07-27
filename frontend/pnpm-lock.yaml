@@ -1570,7 +1570,10 @@ importers:
         version: 3.0.3(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react@18.2.0)
       '@kitconcept/volto-slider-block':
         specifier: ^6.3.1
-        version: 6.3.1(@plone/volto@18.19.0(@babel/runtime@7.26.9)(@popperjs/core@2.11.8)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(embla-carousel@8.5.2)(react@18.2.0)
+        version: 6.3.1(@plone/volto@18.23.0(@babel/runtime@7.26.9)(@popperjs/core@2.11.8)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(embla-carousel@8.5.2)(react@18.2.0)
+      '@plone-collective/volto-footer':
+        specifier: '*'
+        version: 1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@plone/components':
         specifier: workspace:^
         version: link:../../core/packages/components
@@ -1578,8 +1581,8 @@ importers:
         specifier: workspace:^
         version: link:../../core/packages/volto-slate
       '@plonegovbr/volto-social-media':
-        specifier: 2.0.0-alpha.5
-        version: 2.0.0-alpha.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.4(prettier@3.2.5))
+        specifier: 2.0.0-alpha.6
+        version: 2.0.0-alpha.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.4(prettier@3.2.5))
       bootstrap:
         specifier: ^5.3.3
         version: 5.3.3(@popperjs/core@2.11.8)
@@ -3554,6 +3557,12 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
+  '@plone-collective/volto-footer@1.0.0':
+    resolution: {integrity: sha512-rOm7CLMIesC6zGDv3J1UYPWSCyfD7YA8SoQO9H1/7g5szGJn6yYZUQET3dhPLDnf8vnqtWRHy7cuARtMibleLA==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+
   '@plone/components@3.0.2':
     resolution: {integrity: sha512-BLxq4HMcmGux+CD6nOyl0YOqpTiB4yz/h4y/dcGSH3EwhxB3vaEq/Vcoss4qlzHJFfguemNPehJPGP8tq/Z6ww==}
     peerDependencies:
@@ -3563,8 +3572,8 @@ packages:
       react-dom:
         optional: true
 
-  '@plone/registry@2.5.3':
-    resolution: {integrity: sha512-+Dc/mEBe7iSin62OXXJErN4x1AUG0HI0aJ9g0doYlYcLdBRqwfHSxMcfyBD5SPQ5RsrAfu56jF2xCuBJUoBp5A==}
+  '@plone/registry@2.5.4':
+    resolution: {integrity: sha512-ygUm4LuOiwWBsyK/2Z4xI3ORvDAIWL4nn1bgcrUc+BconM4bsY1N0ycDH+VpylEMovx/K2r6BR4R82oBa6KP8g==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -3572,26 +3581,26 @@ packages:
       react-dom:
         optional: true
 
+  '@plone/scripts@3.10.1':
+    resolution: {integrity: sha512-U4RUHX+9YmVAMJX6uY/7KMSzcHimovK2paGVlz4WBicyp9hwCdOQ/9oCvq2wBLWHWAFUXlVjsWyHz03fotrgAA==}
+    hasBin: true
+
   '@plone/scripts@3.8.2':
     resolution: {integrity: sha512-QjZvqJZxawcb+aPA3oByHLCsPmpoZ6Q6ogJxvFGmpS9Oo/+rHDZTYtsRHZ5waS0TfUj0znnX896KD6KY5afAjQ==}
     hasBin: true
 
-  '@plone/scripts@3.9.0':
-    resolution: {integrity: sha512-DbG4TJ09s4An8491aQVJc32XVc4hAaamIE2ymlt27bIVk/Z+Ayx2aFg0M12ykJqSMR1oUYP7/y4vFvopyCObRQ==}
-    hasBin: true
-
-  '@plone/volto-slate@18.3.1':
-    resolution: {integrity: sha512-IWxI+2T7G+glA0XuIh71coKkGWN0fd7IUxlqTNKjMX9mAGEcCQs5MgtnEGNg7WMoFweg7uaUrQ+yNp29N6Cp3w==}
+  '@plone/volto-slate@18.5.0':
+    resolution: {integrity: sha512-DDGCnf6Hj7NiOS7WcmRiq1FHkLNzdiZuPFuJm4f8PRQtCI8AvAj8aMlaMp2tlZ8f6EhHgAH7VevB1WKtOT8yzw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  '@plone/volto@18.19.0':
-    resolution: {integrity: sha512-ztjLgWK1QC2sdnMjQ0AIvx0XXjzgtL8TtR9LWC783g364iE0vJSNZyC72foobmryFPNBRNfrWDeU8UafgM8D6w==}
+  '@plone/volto@18.23.0':
+    resolution: {integrity: sha512-vmgiJnvXA+SMUNIY4EfjDaBTOmKpqC1LdVchNK7J1Rf99sLymVDll4vKUexLaEHkH2zPALgaxkqkKcLFb/YDfw==}
     engines: {node: ^20 || ^22}
 
-  '@plonegovbr/volto-social-media@2.0.0-alpha.5':
-    resolution: {integrity: sha512-bJUtqRUNRZvRN9JHk7jqqrK6qhBgtSmVmMoSZ7yd+lqyys67n25+yyTKq642tzAAJhFBE9fbCT84AI5Q1dUmAg==}
+  '@plonegovbr/volto-social-media@2.0.0-alpha.6':
+    resolution: {integrity: sha512-XM49Y64RlYA4reuSDiW7b6OZE33UMEeIMZv9pl6/reBux3Ep5wOvhh6PFsl7eCbYJNUtFAs89bLtyI7gn1THwQ==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
@@ -16727,9 +16736,9 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
       react-intl: 3.12.1(react@18.2.0)
 
-  '@kitconcept/volto-slider-block@6.3.1(@plone/volto@18.19.0(@babel/runtime@7.26.9)(@popperjs/core@2.11.8)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(embla-carousel@8.5.2)(react@18.2.0)':
+  '@kitconcept/volto-slider-block@6.3.1(@plone/volto@18.23.0(@babel/runtime@7.26.9)(@popperjs/core@2.11.8)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4))(embla-carousel@8.5.2)(react@18.2.0)':
     dependencies:
-      '@plone/volto': 18.19.0(@babel/runtime@7.26.9)(@popperjs/core@2.11.8)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4)
+      '@plone/volto': 18.23.0(@babel/runtime@7.26.9)(@popperjs/core@2.11.8)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4)
       deepmerge: 4.2.2
       embla-carousel-autoplay: 8.5.2(embla-carousel@8.5.2)
       embla-carousel-react: 8.5.2(react@18.2.0)
@@ -17325,6 +17334,11 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
+  '@plone-collective/volto-footer@1.0.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+
   '@plone/components@3.0.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.4(prettier@3.2.5))':
     dependencies:
       '@react-aria/utils': 3.28.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -17338,7 +17352,7 @@ snapshots:
     transitivePeerDependencies:
       - storybook
 
-  '@plone/registry@2.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@plone/registry@2.5.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       auto-config-loader: 1.7.8
       crypto-random-string: 3.2.0
@@ -17350,6 +17364,27 @@ snapshots:
     optionalDependencies:
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
+      - supports-color
+
+  '@plone/scripts@3.10.1(debug@4.3.2)':
+    dependencies:
+      '@babel/core': 7.26.9
+      babel-plugin-react-intl: 5.1.17
+      babel-preset-razzle: 4.2.17
+      chalk: 4.1.2
+      commander: 8.2.0
+      comment-json: 4.2.5
+      execa: 0.6.3
+      find-parent-dir: 0.3.1
+      fs-extra: 10.1.0
+      git-url-parse: 13.1.1
+      glob: 7.1.6
+      lodash: 4.17.21
+      mrs-developer: 2.3.0
+      pofile: 1.0.10
+      wait-on: 7.2.0(debug@4.3.2)
+    transitivePeerDependencies:
+      - debug
       - supports-color
 
   '@plone/scripts@3.8.2':
@@ -17373,28 +17408,7 @@ snapshots:
       - debug
       - supports-color
 
-  '@plone/scripts@3.9.0(debug@4.3.2)':
-    dependencies:
-      '@babel/core': 7.26.9
-      babel-plugin-react-intl: 5.1.17
-      babel-preset-razzle: 4.2.17
-      chalk: 4.1.2
-      commander: 8.2.0
-      comment-json: 4.2.5
-      execa: 0.6.3
-      find-parent-dir: 0.3.1
-      fs-extra: 10.1.0
-      git-url-parse: 13.1.1
-      glob: 7.1.6
-      lodash: 4.17.21
-      mrs-developer: 2.3.0
-      pofile: 1.0.10
-      wait-on: 7.2.0(debug@4.3.2)
-    transitivePeerDependencies:
-      - debug
-      - supports-color
-
-  '@plone/volto-slate@18.3.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)':
+  '@plone/volto-slate@18.5.0(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)':
     dependencies:
       classnames: 2.5.1
       github-slugger: 1.4.0
@@ -17428,13 +17442,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@plone/volto@18.19.0(@babel/runtime@7.26.9)(@popperjs/core@2.11.8)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4)':
+  '@plone/volto@18.23.0(@babel/runtime@7.26.9)(@popperjs/core@2.11.8)(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-with-direction@1.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(seamless-immutable@7.1.4)':
     dependencies:
       '@loadable/component': 5.14.1(react@18.2.0)
       '@loadable/server': 5.14.0(@loadable/component@5.14.1(react@18.2.0))(react@18.2.0)
-      '@plone/registry': 2.5.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@plone/scripts': 3.9.0(debug@4.3.2)
-      '@plone/volto-slate': 18.3.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+      '@plone/registry': 2.5.4(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@plone/scripts': 3.10.1(debug@4.3.2)
+      '@plone/volto-slate': 18.5.0(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
       '@redux-devtools/extension': 3.3.0(redux@4.2.1)
       classnames: 2.5.1
       connected-react-router: 6.8.0(history@4.10.1)(immutable@3.8.2)(react-redux@8.1.2(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router@5.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)(seamless-immutable@7.1.4)
@@ -17535,7 +17549,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@plonegovbr/volto-social-media@2.0.0-alpha.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.4(prettier@3.2.5))':
+  '@plonegovbr/volto-social-media@2.0.0-alpha.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.4(prettier@3.2.5))':
     dependencies:
       '@plone/components': 3.0.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@8.6.4(prettier@3.2.5))
       react: 18.2.0
@@ -25336,11 +25350,7 @@ snapshots:
       pretty-format: 26.6.2
       throat: 5.0.0
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - ts-node
-      - utf-8-validate
 
   jest-leak-detector@26.6.2:
     dependencies:
