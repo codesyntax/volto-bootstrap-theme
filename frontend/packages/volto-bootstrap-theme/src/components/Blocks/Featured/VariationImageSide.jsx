@@ -10,13 +10,9 @@ const BlockView = (props) => {
   const { data, isEditMode } = props;
   let Image = config.getComponent('Image').component;
   const imagePosition = data.imagePosition || 'left';
-  const imagePositionClass = imagePosition === 'right' ? 'order-first' : '';
 
-  console.log('imagePosition', imagePosition);
-  console.log('imagePositionClass', imagePositionClass);
-
-  return (
-    <div className="row my-5">
+  const ImageBlock = ({ data }) => {
+    return (
       <div className="col-md-6">
         {data.image && data.image.length > 0 && (
           <Image
@@ -27,7 +23,12 @@ const BlockView = (props) => {
           />
         )}
       </div>
-      <div className={cx('col-md-6', imagePositionClass)}>
+    );
+  };
+
+  const TextBlock = ({ data }) => {
+    return (
+      <div className="col-md-6">
         <h3>{data.title}</h3>
 
         {isEditMode ? (
@@ -42,6 +43,22 @@ const BlockView = (props) => {
           </UniversalLink>
         )}
       </div>
+    );
+  };
+
+  return (
+    <div className="row my-5">
+      {imagePosition === 'left' ? (
+        <>
+          <ImageBlock data={data} />
+          <TextBlock data={data} />
+        </>
+      ) : (
+        <>
+          <TextBlock data={data} />
+          <ImageBlock data={data} />
+        </>
+      )}
     </div>
   );
 };
