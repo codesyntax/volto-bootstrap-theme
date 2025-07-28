@@ -9,29 +9,27 @@ const BlockView = (props) => {
   const { data, isEditMode } = props;
   let Image = config.getComponent('Image').component;
 
-  console.log('isEditMode', isEditMode);
-
   return (
-    <div className="row my-5">
-      <div className="col-md-6">
-        {data.image && data.image.length > 0 && (
-          <Image
-            item={data.image[0]}
-            alt={data.title}
-            sizes="50vw"
-            responsive={true}
-          />
-        )}
-      </div>
-      <div className="col-md-6">
-        <h3>{data.title}</h3>
+    <div className="card text-bg-dark my-5">
+      {data.image && data.image.length > 0 && (
+        <Image
+          className="responsive"
+          item={data.image[0]}
+          sizes="(min-width: 1200px) 1200px, 75vw"
+          alt={data.image[0].title}
+          title={data.image[0].title}
+        />
+      )}
 
-        {isEditMode ? (
-          <DetachedTextBlockEditor {...props} />
-        ) : (
-          <TextBlockView {...props} />
-        )}
-
+      <div className="card-img-overlay">
+        <h5 className="card-title">{data.title}</h5>
+        <p className="card-text">
+          {isEditMode ? (
+            <DetachedTextBlockEditor {...props} />
+          ) : (
+            <TextBlockView {...props} />
+          )}
+        </p>
         {data.url && (
           <UniversalLink to={data.url} className="btn btn-primary">
             {data.linkText}

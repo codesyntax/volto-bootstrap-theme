@@ -25,6 +25,10 @@ const messages = defineMessages({
     id: 'linkText',
     defaultMessage: 'linkText',
   },
+  imagePosition: {
+    id: 'imagePosition',
+    defaultMessage: 'imagePosition',
+  },
 });
 
 export default messages;

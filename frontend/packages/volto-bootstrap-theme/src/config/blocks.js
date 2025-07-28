@@ -3,9 +3,9 @@ import homeBand from '@plone/volto/icons/image-wide.svg';
 
 import FeaturedBlockView from '../components/Blocks/Featured/View';
 import FeaturedBlockSchema from '../components/Blocks/Featured/schema';
-import FeaturedBlockViewVariationImageLeft from '../components/Blocks/Featured/VariationImageLeftView.jsx';
-import FeaturedBlockViewVariationImageRight from '../components/Blocks/Featured/VariationImageRightView.jsx';
-
+import FeaturedBlockVariationImageToTheSide from '../components/Blocks/Featured/VariationImageSide.jsx';
+import FeaturedBlockVariationImageOverlay from '../components/Blocks/Featured/VariationImageOverlay.jsx';
+import { schemaEnhancerImageToTheSide } from '../components/Blocks/Featured/schemaEnhancers.js';
 export default function install(config) {
   // disable gridBlock and teaser
   config.blocks.blocksConfig.gridBlock = {};
@@ -23,16 +23,17 @@ export default function install(config) {
     //dataAdapter: FeaturedBlockDataAdapter,
     variations: [
       {
-        id: 'variation01',
-        title: 'Image on the left',
+        id: 'variation00',
+        title: 'Overlay image',
         isDefault: true,
-        template: FeaturedBlockViewVariationImageLeft,
+        template: FeaturedBlockVariationImageOverlay,
       },
       {
-        id: 'variation02',
-        title: 'Image on the right',
+        id: 'variation01',
+        title: 'Image to the side',
         isDefault: false,
-        template: FeaturedBlockViewVariationImageRight,
+        template: FeaturedBlockVariationImageToTheSide,
+        schemaEnhancer: schemaEnhancerImageToTheSide,
       },
     ],
   };
