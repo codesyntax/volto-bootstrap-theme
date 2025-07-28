@@ -3,11 +3,13 @@ import homeBand from '@plone/volto/icons/image-wide.svg';
 
 import FeaturedBlockView from '../components/Blocks/Featured/View';
 import FeaturedBlockSchema from '../components/Blocks/Featured/schema';
-import FeaturedBlockVariationImageToTheSide from '../components/Blocks/Featured/VariationImageSide.jsx';
-import FeaturedBlockVariationImageOverlay from '../components/Blocks/Featured/VariationImageOverlay.jsx';
-import { schemaEnhancerImageToTheSide } from '../components/Blocks/Featured/schemaEnhancers.js';
+import FeaturedBlockVariationImageToTheSide from '../components/Blocks/Featured/VariationImageSide';
+import FeaturedBlockVariationImageOverlay from '../components/Blocks/Featured/VariationImageOverlay';
+import { schemaEnhancerImageToTheSide } from '../components/Blocks/Featured/schemaEnhancers';
 
-import HorizontalRuleView from '../components/Blocks/HR/View.jsx';
+import HorizontalRuleView from '../components/Blocks/HR/View';
+import SpacerView from '../components/Blocks/Spacer/View';
+
 export default function install(config) {
   // disable gridBlock and teaser
   config.blocks.blocksConfig.gridBlock = {};
@@ -44,6 +46,17 @@ export default function install(config) {
     id: '_vbtHR',
     title: 'Horizontal Rule',
     view: HorizontalRuleView,
+    //edit: BlockEdit,
+    //blockSchema: FeaturedBlockSchema,
+    icon: homeBand,
+    sidebarTab: 1,
+    group: 'common',
+  };
+
+  config.blocks.blocksConfig._vbtSpacer = {
+    id: '_vbtSpacer',
+    title: 'Spacer',
+    view: SpacerView,
     //edit: BlockEdit,
     //blockSchema: FeaturedBlockSchema,
     icon: homeBand,
