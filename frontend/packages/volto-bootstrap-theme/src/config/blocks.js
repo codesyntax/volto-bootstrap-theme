@@ -6,6 +6,8 @@ import FeaturedBlockSchema from '../components/Blocks/Featured/schema';
 import FeaturedBlockVariationImageToTheSide from '../components/Blocks/Featured/VariationImageSide.jsx';
 import FeaturedBlockVariationImageOverlay from '../components/Blocks/Featured/VariationImageOverlay.jsx';
 import { schemaEnhancerImageToTheSide } from '../components/Blocks/Featured/schemaEnhancers.js';
+
+import HorizontalRuleView from '../components/Blocks/HR/View.jsx';
 export default function install(config) {
   // disable gridBlock and teaser
   config.blocks.blocksConfig.gridBlock = {};
@@ -36,6 +38,17 @@ export default function install(config) {
         schemaEnhancer: schemaEnhancerImageToTheSide,
       },
     ],
+  };
+
+  config.blocks.blocksConfig._vbtHR = {
+    id: '_vbtHR',
+    title: 'Horizontal Rule',
+    view: HorizontalRuleView,
+    //edit: BlockEdit,
+    //blockSchema: FeaturedBlockSchema,
+    icon: homeBand,
+    sidebarTab: 1,
+    group: 'common',
   };
 
   return config;
