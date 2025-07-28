@@ -5,28 +5,28 @@
 
 .public-ui {
   // Utilities
-  @import 'bootstrap/scss/utilities/api';
+  //@import 'bootstrap/scss/utilities/api';
   // scss-docs-end import-stack
 
   $font-size-base: 1.125rem !default;
 
-  #mainheader,
-  footer {
-    background-color: $gray-100;
-  }
+  // #mainheader,
+  // footer {
+  //   background-color: $gray-100;
+  // }
 
-  .address-container {
-    @extend .my-3;
-  }
+  // .address-container {
+  //   @extend .my-3;
+  // }
 
-  .address-first-line {
-    @extend .mb-lg-0;
-    @extend .mb-3;
-  }
+  // .address-first-line {
+  //   @extend .mb-lg-0;
+  //   @extend .mb-3;
+  // }
 
-  .address-second-line {
-    @extend .mb-0;
-  }
+  // .address-second-line {
+  //   @extend .mb-0;
+  // }
 }
 
 /* No CSS beyond this point except next line */
