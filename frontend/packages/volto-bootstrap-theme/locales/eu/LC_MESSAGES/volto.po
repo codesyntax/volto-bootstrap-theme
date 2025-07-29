@@ -16,6 +16,21 @@ msgstr ""
 msgid "Add link"
 msgstr ""
 
+#. Default: "Breadcrumbs"
+#: components/Breadcrumbs/Breadcrumbs
+msgid "Breadcrumbs"
+msgstr ""
+
+#. Default: "Home"
+#: components/Breadcrumbs/Breadcrumbs
+msgid "Home"
+msgstr ""
+
+#. Default: "Invalid block - Will be removed on saving"
+#: components/Theme/RenderBlocks
+msgid "Invalid Block"
+msgstr ""
+
 #. Default: "Link"
 #: components/Widgets/schema/navrootFooterLinksSchema
 msgid "Link"
@@ -26,9 +41,19 @@ msgstr ""
 msgid "Logo of"
 msgstr ""
 
+#. Default: "No items found in this container."
+#: components/Blocks/Listing/ListingBody
+msgid "No items found in this container."
+msgstr ""
+
 #. Default: "Open in a new tab"
 #: components/Widgets/schema/navrootFooterLinksSchema
 msgid "Open in a new tab"
+msgstr ""
+
+#. Default: "Site Setup"
+#: components/Breadcrumbs/Breadcrumbs
+msgid "Site Setup"
 msgstr ""
 
 #. Default: "Switch to"
@@ -49,4 +74,56 @@ msgstr ""
 #. Default: "Toggle navigation"
 #: components/Navigation/Navigation
 msgid "Toggle Navigation"
+msgstr ""
+
+#. Default: "Unknown Block {block}"
+#: components/Theme/RenderBlocks
+msgid "Unknown Block"
+msgstr ""
+
+#. Default: "blocktitle"
+#: components/Blocks/Featured/messages
+msgid "blocktitle"
+msgstr ""
+
+#. Default: "default"
+#: components/Blocks/Featured/messages
+msgid "default"
+msgstr ""
+
+#. Default: "Image"
+#: components/Blocks/Featured/messages
+msgid "image"
+msgstr ""
+
+#. Default: "imagePosition"
+#: components/Blocks/Featured/messages
+msgid "imagePosition"
+msgstr ""
+
+#. Default: "itemsPerRow"
+#: components/Blocks/Listing/messages
+msgid "itemsPerRow"
+msgstr ""
+
+#. Default: "linkText"
+#: components/Blocks/Featured/messages
+#: components/Blocks/Listing/messages
+msgid "linkText"
+msgstr ""
+
+#. Default: "Loading"
+#: components/Blocks/Listing/ListingBody
+msgid "loading"
+msgstr ""
+
+#. Default: "Title"
+#: components/Blocks/Featured/messages
+msgid "title"
+msgstr ""
+
+#. Default: "url"
+#: components/Blocks/Featured/messages
+#: components/Blocks/Listing/messages
+msgid "url"
 msgstr ""

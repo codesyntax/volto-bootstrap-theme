@@ -10,6 +10,9 @@ import { schemaEnhancerImageToTheSide } from '../components/Blocks/Featured/sche
 import HorizontalRuleView from '../components/Blocks/HR/View';
 import SpacerView from '../components/Blocks/Spacer/View';
 
+import GridTemplateVariation from '../components/Blocks/Listing/GridTemplate';
+import { schemaEnhancerGridTemplate } from '../components/Blocks/Listing/schemaEnhancer';
+
 export default function install(config) {
   // disable gridBlock and teaser
   config.blocks.blocksConfig.gridBlock = {};
@@ -63,6 +66,14 @@ export default function install(config) {
     sidebarTab: 1,
     group: 'common',
   };
+
+  config.blocks.blocksConfig.listing.variations.push({
+    id: 'grid',
+    title: 'Grid',
+    isDefault: true,
+    template: GridTemplateVariation,
+    schemaEnhancer: schemaEnhancerGridTemplate,
+  });
 
   return config;
 }
