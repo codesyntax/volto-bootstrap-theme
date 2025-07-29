@@ -13,6 +13,10 @@ import SpacerView from '../components/Blocks/Spacer/View';
 import GridTemplateVariation from '../components/Blocks/Listing/GridTemplate';
 import { schemaEnhancerGridTemplate } from '../components/Blocks/Listing/schemaEnhancer';
 
+import FeaturedContainerView from '../components/Blocks/FeaturedContainer/View';
+import { FeaturedContainerSchema } from '../components/Blocks/FeaturedContainer/schema';
+import FeaturedContainerVariationCards from '../components/Blocks/FeaturedContainer/VariationCards';
+
 export default function install(config) {
   // disable gridBlock and teaser
   config.blocks.blocksConfig.gridBlock = {};
@@ -67,13 +71,32 @@ export default function install(config) {
     group: 'common',
   };
 
-  config.blocks.blocksConfig.listing.variations.push({
+  config.blocks.blocksConfig.listing.variations = {
     id: 'grid',
     title: 'Grid',
     isDefault: true,
     template: GridTemplateVariation,
     schemaEnhancer: schemaEnhancerGridTemplate,
-  });
+  };
+
+  config.blocks.blocksConfig._vbtFeaturedContainer = {
+    id: '_vbtFeaturedContainer',
+    title: 'Cards',
+    view: FeaturedContainerView,
+    //edit: BlockEdit,
+    blockSchema: FeaturedContainerSchema,
+    icon: homeBand,
+    sidebarTab: 1,
+    group: 'common',
+    variations: [
+      {
+        id: 'variation01',
+        title: 'Cards',
+        isDefault: true,
+        template: FeaturedContainerVariationCards,
+      },
+    ],
+  };
 
   return config;
 }
