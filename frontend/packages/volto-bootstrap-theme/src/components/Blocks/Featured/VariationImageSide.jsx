@@ -14,9 +14,9 @@ const BlockView = (props) => {
   const ImageBlock = ({ data }) => {
     return (
       <div className="col-md-6">
-        {data.image && data.image.length > 0 && (
+        {data.preview_image && data.preview_image.length > 0 && (
           <Image
-            item={data.image[0]}
+            item={data.preview_image[0]}
             alt={data.title}
             sizes="50vw"
             responsive={true}
@@ -37,8 +37,8 @@ const BlockView = (props) => {
           <TextBlockView {...props} />
         )}
 
-        {data.url && (
-          <UniversalLink to={data.url} className="btn btn-primary">
+        {data.href && (
+          <UniversalLink to={data.href} className="btn btn-primary">
             {data.linkText}
           </UniversalLink>
         )}

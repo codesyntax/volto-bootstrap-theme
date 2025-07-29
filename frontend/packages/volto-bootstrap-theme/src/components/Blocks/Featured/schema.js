@@ -8,22 +8,23 @@ const Schema = ({ intl }) => {
       {
         id: 'default',
         title: intl.formatMessage(messages.default),
-        fields: ['title', 'image', 'linkText', 'url'],
+        fields: ['title', 'preview_image', 'linkText', 'href'],
       },
     ],
 
     properties: {
-      image: {
+      preview_image: {
         title: intl.formatMessage(messages.image),
         widget: 'object_browser',
+        mode: 'image',
+        allowExternals: true,
       },
-      url: {
+
+      href: {
         title: intl.formatMessage(messages.url),
         widget: 'url',
       },
-      linkText: {
-        title: intl.formatMessage(messages.linkText),
-      },
+
       title: {
         title: intl.formatMessage(messages.title),
       },

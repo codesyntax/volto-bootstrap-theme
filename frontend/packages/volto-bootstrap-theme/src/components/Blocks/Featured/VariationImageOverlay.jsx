@@ -8,16 +8,16 @@ import UniversalLink from '@plone/volto/components/manage/UniversalLink/Universa
 const BlockView = (props) => {
   const { data, isEditMode } = props;
   let Image = config.getComponent('Image').component;
-
+  console.log('data', data);
   return (
     <div className="card text-bg-dark my-5">
-      {data.image && data.image.length > 0 && (
+      {data.preview_image && data.preview_image.length > 0 && (
         <Image
           className="responsive"
-          item={data.image[0]}
+          item={data.preview_image[0]}
           sizes="(min-width: 1200px) 1200px, 75vw"
-          alt={data.image[0].title}
-          title={data.image[0].title}
+          alt={data.preview_image[0].title}
+          title={data.preview_image[0].title}
         />
       )}
 
@@ -30,8 +30,8 @@ const BlockView = (props) => {
             <TextBlockView {...props} />
           )}
         </p>
-        {data.url && (
-          <UniversalLink to={data.url} className="btn btn-primary">
+        {data.href && (
+          <UniversalLink to={data.href} className="btn btn-primary">
             {data.linkText}
           </UniversalLink>
         )}
