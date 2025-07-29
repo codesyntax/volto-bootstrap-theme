@@ -31,7 +31,7 @@ const BlockView = (props) => {
           )}
         </p>
         {data.href && (
-          <UniversalLink to={data.href} className="btn btn-primary">
+          <UniversalLink href={data.href} className="btn btn-primary">
             {data.linkText}
           </UniversalLink>
         )}

@@ -15,7 +15,7 @@ const GridTemplate = (props) => {
   const {
     items,
     linkText,
-    url,
+    href,
     isEditMode,
     headlineTag: HeadlineTag,
     itemsPerRow,
@@ -68,9 +68,9 @@ const GridTemplate = (props) => {
         </div>
       </div>
 
-      {url && url[0] && (
+      {href && (
         <div className="d-flex justify-content-end">
-          <UniversalLink item={url[0]}>{linkText}</UniversalLink>
+          <UniversalLink href={href}>{linkText}</UniversalLink>
         </div>
       )}
     </>
