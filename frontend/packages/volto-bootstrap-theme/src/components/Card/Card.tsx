@@ -81,9 +81,8 @@ const Card = (props: CardProps) => {
         openLinkInNewTab={openLinkInNewTab}
         ref={linkRef}
       />
-      <div className="card-inner">
-        {childrenWithProps(props.children, { a11yLabelId })}
-      </div>
+
+      {childrenWithProps(props.children, { a11yLabelId })}
     </div>
   );
 };
