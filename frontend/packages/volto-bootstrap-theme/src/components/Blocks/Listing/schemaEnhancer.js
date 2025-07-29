@@ -10,16 +10,17 @@ const schemaEnhancerGridTemplate = ({ formData, schema, intl }) => {
     ],
     default: 'col-md-4',
   };
-  schema.properties.url = {
+  schema.properties.href = {
     title: intl.formatMessage(messages.url),
-    widget: 'object_browser',
+    widget: 'url',
+    allowExternals: true,
   };
   schema.properties.linkText = {
     title: intl.formatMessage(messages.linkText),
   };
   schema.fieldsets[0].fields.push('itemsPerRow');
   schema.fieldsets[0].fields.push('linkText');
-  schema.fieldsets[0].fields.push('url');
+  schema.fieldsets[0].fields.push('href');
   return schema;
 };
 

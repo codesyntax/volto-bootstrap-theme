@@ -45,7 +45,7 @@ const GridTemplate = (props) => {
                 <CustomItemBodyTemplate item={item} />
               ) : (
                 <>
-                  {item.image_field !== '' && (
+                  {item.preview_image && (
                     <Card.Image
                       item={item}
                       imageComponent={PreviewImageComponent}
