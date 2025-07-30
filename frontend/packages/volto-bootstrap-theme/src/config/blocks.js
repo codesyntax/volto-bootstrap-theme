@@ -17,6 +17,10 @@ import FeaturedContainerView from '../components/Blocks/FeaturedContainer/View';
 import { FeaturedContainerSchema } from '../components/Blocks/FeaturedContainer/schema';
 import FeaturedContainerVariationCards from '../components/Blocks/FeaturedContainer/VariationCards';
 
+import SliderView from '../components/Blocks/Slider/View';
+import { SliderSchema } from '../components/Blocks/Slider/schema';
+import SliderDefaultVariation from '../components/Blocks/Slider/VariationSlider';
+
 export default function install(config) {
   // disable gridBlock and teaser
   config.blocks.blocksConfig.gridBlock = {};
@@ -94,6 +98,25 @@ export default function install(config) {
         title: 'Cards',
         isDefault: true,
         template: FeaturedContainerVariationCards,
+      },
+    ],
+  };
+
+  config.blocks.blocksConfig._vbtSlider = {
+    id: '_vbtSlider',
+    title: 'Slider',
+    view: SliderView,
+    //edit: BlockEdit,
+    blockSchema: SliderSchema,
+    icon: homeBand,
+    sidebarTab: 1,
+    group: 'common',
+    variations: [
+      {
+        id: 'variation01',
+        title: 'Slider',
+        isDefault: true,
+        template: SliderDefaultVariation,
       },
     ],
   };
