@@ -8,7 +8,7 @@ import UniversalLink from '@plone/volto/components/manage/UniversalLink/Universa
 const BlockView = (props) => {
   const { data, isEditMode } = props;
   let Image = config.getComponent('Image').component;
-  console.log('data', data);
+
   return (
     <div className="card text-bg-dark my-5">
       {data.preview_image && data.preview_image.length > 0 && (
