@@ -65,9 +65,9 @@ const Navigation = (props) => {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul id="portal-globalnav" className="navbar-nav mr-auto">
-          {items.map((item, order, key) => {
+          {items.map((item, order) => {
             return (
-              <li className="nav-item dropdown" key={key}>
+              <li className="nav-item dropdown" key={item['@id']}>
                 {item.items.length > 0 ? (
                   <Link
                     to=""
@@ -94,9 +94,9 @@ const Navigation = (props) => {
                     <div className="container">
                       <div className="no-group">
                         <ul>
-                          {item.items.map((subitem, key) => {
+                          {item.items.map((subitem) => {
                             return (
-                              <li key={key}>
+                              <li key={subitem['@id']}>
                                 <Link
                                   to={subitem.url}
                                   className="dropdown-item"
