@@ -7,17 +7,19 @@ import config from '@plone/registry';
 const Header = ({ pathname }) => {
   const Container = config.getComponent('Container').component;
   return (
-    <header id="mainheader" className="sticky-lg-top">
-      <Container
-        id="header-container"
-        className="px-2 px-lg-3 d-lg-flex justify-content-lg-between align-items-lg-center"
-      >
-        <Logo />
-        <Navigation pathname={pathname} />
-        <SearchLink pathname={pathname} />
-        <LanguageSelector />
-      </Container>
-    </header>
+    <>
+      <header id="mainheader" className="sticky-lg-top">
+        <Container
+          id="header-container"
+          className="px-2 px-lg-3 d-lg-flex justify-content-lg-between align-items-lg-center"
+        >
+          <Logo />
+          <Navigation pathname={pathname} />
+          <SearchLink pathname={pathname} />
+          <LanguageSelector />
+        </Container>
+      </header>
+    </>
   );
 };
 

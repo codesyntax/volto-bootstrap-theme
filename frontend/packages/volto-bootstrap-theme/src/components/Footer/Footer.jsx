@@ -40,7 +40,9 @@ const Footer = () => {
 
   return (
     <>
-      <SlotRenderer name="preFooter" content={content} />
+      <div className="pre-footer">
+        <SlotRenderer name="preFooter" content={content} />
+      </div>
       <footer id="mainfooter">
         <div className="container">
           <div className="pre-footer-content">
@@ -93,7 +95,9 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <SlotRenderer name="postFooter" content={content} />
+      <div class="post-footer">
+        <SlotRenderer name="postFooter" content={content} />
+      </div>
     </>
   );
 };
