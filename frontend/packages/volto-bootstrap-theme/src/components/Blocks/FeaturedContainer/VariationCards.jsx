@@ -1,8 +1,6 @@
 import React from 'react';
-import withBlockExtensions from '@plone/volto/helpers/Extensions/withBlockExtensions';
-import { DetachedTextBlockEditor } from '@plone/volto-slate/blocks/Text/DetachedTextBlockEditor';
+
 import config from '@plone/volto/registry';
-import { TextBlockView } from '@plone/volto-slate/blocks/Text';
 import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
 import cx from 'classnames';
 
@@ -11,7 +9,7 @@ import Card from '@codesyntax/volto-bootstrap-theme/components/Card/Card';
 const BlockView = (props) => {
   const { data, isEditMode } = props;
   const cards = data.featuredContainerCards?.items || [];
-  console.log('data', data);
+
   const PreviewImageComponent = config.getComponent('PreviewImage').component;
 
   return (
