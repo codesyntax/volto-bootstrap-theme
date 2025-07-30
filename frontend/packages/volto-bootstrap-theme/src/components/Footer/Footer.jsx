@@ -10,6 +10,7 @@ import { flattenToAppURL } from '@plone/volto/helpers/Url/Url';
 import { useNetworks } from '@plonegovbr/volto-social-media/hooks/useNetworks';
 import SocialNetwork from '@plonegovbr/volto-social-media/components/SocialNetwork/SocialNetwork';
 import Image from '@plone/volto/components/theme/Image/Image';
+import SlotRenderer from '@plone/volto/components/theme/SlotRenderer/SlotRenderer';
 
 const Footer = () => {
   const { siteActions = [] } = useSelector(
@@ -38,52 +39,62 @@ const Footer = () => {
   const socialLinks = useNetworks();
 
   return (
-    <footer id="mainfooter">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="row">
-              {footerImage && (
-                <div className="col-6 col-lg-12">
-                  <Image src={footerImage.download} alt="" />
+    <>
+      <SlotRenderer name="preFooter" content={content} />
+      <footer id="mainfooter">
+        <div className="container">
+          <div className="pre-footer-content">
+            <SlotRenderer name="preFooterContent" content={content} />
+          </div>
+          <div className="row">
+            <div className="col-md-6">
+              <div className="row">
+                {footerImage && (
+                  <div className="col-6 col-lg-12">
+                    <Image src={footerImage.download} alt="" />
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12">
+              {footerLinks.length > 0 && (
+                <div className="text-center pb-lg-4">
+                  <ul className="footer-links list-inline m-0">
+                    {footerLinks.map((item, key) => (
+                      <li className="list-inline-item" key={key}>
+                        <UniversalLink
+                          href={flattenToAppURL(item.href[0]['@id'])}
+                        >
+                          {item.title}
+                        </UniversalLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {socialLinks.length > 0 && (
+                <div className="text-center pb-lg-4">
+                  <ul className="footer-links list-inline m-0">
+                    {socialLinks.map((item, key) => (
+                      <li className="list-inline-item" key={key}>
+                        <SocialNetwork {...item} />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
             </div>
           </div>
-        </div>
-
-        <div className="row">
-          <div className="col-12">
-            {footerLinks.length > 0 && (
-              <div className="text-center pb-lg-4">
-                <ul className="footer-links list-inline m-0">
-                  {footerLinks.map((item, key) => (
-                    <li className="list-inline-item" key={key}>
-                      <UniversalLink
-                        href={flattenToAppURL(item.href[0]['@id'])}
-                      >
-                        {item.title}
-                      </UniversalLink>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {socialLinks.length > 0 && (
-              <div className="text-center pb-lg-4">
-                <ul className="footer-links list-inline m-0">
-                  {socialLinks.map((item, key) => (
-                    <li className="list-inline-item" key={key}>
-                      <SocialNetwork {...item} />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+          <div className="post-footer-content">
+            <SlotRenderer name="postFooterContent" content={content} />
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+      <SlotRenderer name="postFooter" content={content} />
+    </>
   );
 };
 
