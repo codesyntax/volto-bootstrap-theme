@@ -2,6 +2,7 @@ import React from 'react';
 
 import config from '@plone/volto/registry';
 import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
+import * as bootstrap from 'bootstrap';
 
 const BlockView = (props) => {
   const { data } = props;
@@ -25,7 +26,7 @@ const BlockView = (props) => {
                   aria-label={`Slide ${key}`}
                   type="button"
                   data-bs-slide-to={key}
-                  data-bs-target={carouselUUID}
+                  data-bs-target={`#${carouselUUID}`}
                 ></button>
               );
             })}
@@ -64,7 +65,7 @@ const BlockView = (props) => {
             className="carousel-control-prev"
             type="button"
             data-bs-slide="prev"
-            data-bs-target={carouselUUID}
+            data-bs-target={`#${carouselUUID}`}
           >
             <span
               className="carousel-control-prev-icon"
@@ -76,7 +77,7 @@ const BlockView = (props) => {
             className="carousel-control-next"
             type="button"
             data-bs-slide="next"
-            data-bs-target={carouselUUID}
+            data-bs-target={`#${carouselUUID}`}
           >
             <span
               className="carousel-control-next-icon"
