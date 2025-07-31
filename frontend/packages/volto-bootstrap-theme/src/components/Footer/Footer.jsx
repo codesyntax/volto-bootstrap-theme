@@ -95,7 +95,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div class="post-footer">
+      <div className="post-footer">
         <SlotRenderer name="postFooter" content={content} />
       </div>
     </>
