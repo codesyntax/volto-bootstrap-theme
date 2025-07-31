@@ -1,11 +1,14 @@
 /* This import allows third-party addons to use their own "_variables.scss" at this point */
 @import 'addonsThemeCustomizationsVariables';
 
-@import 'bootstrap';
+@import 'custom_bootstrap';
+
+// See: https://github.com/RedTurtle/design-comuni-plone-theme/blob/main/src/theme/site.scss
+@import 'cms-ui';
 
 .public-ui {
   // Utilities
-  //@import 'bootstrap/scss/utilities/api';
+  @import 'bootstrap/scss/utilities/api';
   // scss-docs-end import-stack
 
   $font-size-base: 1.125rem !default;

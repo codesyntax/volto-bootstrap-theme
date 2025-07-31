@@ -1,0 +1,804 @@
+@import 'cms-ui_container';
+
+// Undefined errors: so we define them here
+$focus-outline-color: black;
+$gray-border: $gray-500;
+$tertiary: black;
+$neutral-2-b5: black;
+$text-color: black;
+
+body.cms-ui {
+  font-size: 16px;
+  line-height: 1.5;
+
+  :focus:not(.focus--mouse),
+  input[type='checkbox']:focus + label:before {
+    outline: 2px solid #000 !important;
+    outline-offset: 2px;
+    border: none !important;
+    box-shadow: 0 0 0 2px #fff !important;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+    line-height: 1.555;
+  }
+
+  .block {
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+
+    %heading {
+      margin-top: 0; /* 1*/
+      margin-bottom: $headings-margin-bottom;
+      color: $headings-color;
+      font-family: $font-family-sans-serif;
+      font-weight: $headings-font-weight;
+      line-height: $headings-line-height;
+    }
+
+    h1 {
+      @extend %heading;
+      @include font-size($h1-font-size);
+    }
+
+    h2 {
+      @extend %heading;
+      @include font-size($h2-font-size);
+    }
+
+    h3 {
+      @extend %heading;
+      @include font-size($h3-font-size);
+    }
+
+    h4 {
+      @extend %heading;
+      @include font-size($h4-font-size);
+      font-weight: 600;
+    }
+
+    h5 {
+      @extend %heading;
+      @include font-size($h5-font-size);
+      font-weight: 400;
+    }
+
+    h6 {
+      @extend %heading;
+      @include font-size($h6-font-size);
+      font-weight: 600;
+    }
+
+    //@import 'bootstrap-italia/src/scss/custom/type'; //to apply styles for headers on different screen sizes
+
+    //align
+    .text-center {
+      text-align: center;
+    }
+
+    .text-end {
+      text-align: right;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+
+    .block.text {
+      line-height: 1.555;
+    }
+
+    &.table {
+      @import 'bootstrap/scss/reboot';
+      @import 'bootstrap/scss/tables';
+      // @import 'bootstrap-italia/src/scss/custom/tables';
+      // @import 'extras/tables';
+
+      .ui.table {
+        &.inverted {
+          th,
+          td {
+            border-color: inherit !important;
+          }
+        }
+        thead th {
+          font-weight: bold;
+          text-transform: unset;
+          color: var(--bs-table-color);
+        }
+
+        &.very.basic {
+          &:not(.sortable):not(.striped) {
+            th:first-child,
+            td:first-child {
+              padding-left: 0.5rem;
+            }
+            thead tr:first-child th {
+              padding-top: 0.5rem;
+            }
+            td:last-child {
+              padding-right: 0.5rem;
+            }
+          }
+        }
+
+        &.striped {
+          tbody tr:nth-child(2n) {
+            background-color: rgba(0, 0, 50, 0.02) !important;
+          }
+        }
+      }
+    }
+  }
+
+  &.contenttype-document,
+  &.contenttype-argomento,
+  &.contenttype-pagina-argomento,
+  &.contenttype-cartellamodulistica {
+    .block {
+      font-family: $font-family-sans-serif;
+      font-weight: 300;
+      line-height: 1.555;
+    }
+  }
+
+  .simple-text-editor-widget {
+    .simple-text-input {
+      display: inline-block;
+      min-width: 1px;
+
+      &:empty:before {
+        display: block; /* For Firefox */
+        content: attr(placeholder);
+        font-weight: inherit;
+        opacity: 0.333;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .detached-slate-editor {
+    p:not(:last-child) {
+      margin-bottom: 1rem !important;
+    }
+  }
+
+  .blocks-widget-container {
+    .block.table .toolbar {
+      top: -3.34rem;
+    }
+  }
+
+  .it-header-wrapper,
+  .public-ui {
+    font-size: 18px;
+    font-weight: 300;
+
+    * {
+      font-family: 'Titillium Web';
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  .public-ui:not(:has(.it-header-wrapper)) {
+    a:not(.btn) {
+      color: $link-color;
+    }
+  }
+
+  &:not(.section-search):not(.section-sitemap) {
+    .it-footer {
+      display: none;
+    }
+  }
+
+  // Link button and tooltip
+  .link-form-container {
+    display: flex;
+    padding: 0.3rem 0;
+
+    .field {
+      display: flex;
+
+      .wrap-field {
+        display: flex;
+        align-items: center;
+
+        .input-anchorlink-theme input:focus,
+        .ui.icon.button:focus,
+        .ui.basic.button:focus {
+          border-radius: 0;
+          outline: solid 2px $focus-outline-color;
+        }
+
+        .cancel .icon {
+          fill: #e40166 !important;
+        }
+      }
+
+      input#field-link {
+        height: auto;
+        height: auto;
+        color: #444;
+        font-size: 0.7rem;
+        font-weight: normal;
+      }
+
+      #field-data-element-select {
+        position: relative;
+        width: 100%;
+        min-width: 220px;
+        height: 34px;
+        padding: 0 7px 0 12px;
+        margin-top: 0.2rem;
+        background-color: transparent;
+        color: #444;
+        font-family: 'Poppins', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: normal;
+
+        .react-select__control {
+          min-height: 0;
+          background-color: #fafafa;
+
+          .react-select__single-value {
+            color: #444;
+            font-weight: normal;
+          }
+
+          .react-select__placeholder {
+            opacity: 0.4;
+          }
+        }
+      }
+
+      .wrapper-submit {
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0.8rem;
+
+        .ui.basic.button:focus {
+          border-radius: 0;
+          outline: solid 2px $focus-outline-color;
+        }
+      }
+    }
+  }
+
+  .react-select__menu {
+    z-index: 11;
+
+    /* FIX CT SELECT REACTVIRTUALIZED */
+    .ReactVirtualized__Grid.ReactVirtualized__List {
+      width: 100% !important;
+
+      .ReactVirtualized__Grid__innerScrollContainer {
+        max-width: none !important;
+      }
+    }
+  }
+
+  .SingleDatePicker {
+    z-index: unset;
+
+    .DateInput {
+      z-index: 0;
+    }
+
+    .SingleDatePicker_picker {
+      z-index: 10;
+    }
+  }
+
+  .menu-configuration-widget,
+  .footer-configuration-widget,
+  .secondary-menu-configuration-widget,
+  .search-sections-configuration-widget {
+    .ui.pointing.secondary.menu {
+      flex-wrap: wrap;
+    }
+  }
+
+  //cookie banner icons
+  // replaced icon code with left and right as they actually render correctly
+  // and rotated the icon
+  &.section-gdpr-cookie-settings {
+    .cookies-widget .move-buttons {
+      i.icon.arrow.up {
+        transform: rotate(90deg);
+        &::before {
+          content: '\e911';
+        }
+      }
+
+      i.icon.arrow.down {
+        transform: rotate(90deg);
+        &::before {
+          content: '\e905';
+        }
+      }
+    }
+  }
+
+  .sidebar-container-enter-done {
+    z-index: 150000 !important;
+  }
+
+  .sidebar-container .object-listing,
+  .icon-align-name {
+    svg.icon {
+      width: 20px !important;
+      height: 20px !important;
+      color: #999 !important;
+      fill: #999 !important;
+    }
+  }
+
+  /*Block chooser*/
+  [data-popper-placement] {
+    z-index: 1000;
+  }
+
+  .sidebar-container {
+    .numbers-block-sidebar-form-container {
+      padding-bottom: 1rem;
+    }
+
+    .breadcrumbs {
+      .breadcrumb {
+        flex-wrap: wrap;
+        row-gap: 0.5em;
+
+        a.section {
+          position: relative;
+
+          &:not(:last-of-type) {
+            max-width: 33.33%;
+          }
+
+          &:last-of-type {
+            max-width: 100%;
+
+            .tooltip {
+              text-overflow: unset;
+              white-space: normal;
+            }
+          }
+        }
+
+        .tooltip {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          &:hover + .tooltip-text {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          &:last-child {
+            max-width: none;
+            text-overflow: unset;
+            white-space: normal;
+          }
+        }
+
+        .tooltip-text {
+          position: absolute;
+          z-index: 1;
+          bottom: 125%;
+          left: 50%;
+          width: 8rem;
+          padding: 5px;
+          border-radius: 0.2em;
+          margin-left: -60px;
+          background-color: $gray-200;
+          color: $black;
+          font-size: 0.8em;
+          opacity: 0;
+          text-align: center;
+          transition: opacity 0.3s;
+          visibility: hidden;
+
+          &::after {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $gray-200 transparent transparent transparent;
+            margin-left: -5px;
+            content: '';
+          }
+        }
+      }
+    }
+
+    .slate-editor ul li {
+      display: list-item;
+      padding: 0;
+    }
+  }
+
+  .icon-align-name {
+    svg.icon {
+      margin-right: 0.75rem !important;
+    }
+  }
+
+  .color-list-widget {
+    .button {
+      padding: 1rem;
+      border: 1px solid $gray-border;
+
+      &.active {
+        border: 2px solid $primary;
+      }
+    }
+
+    .button.transparent,
+    .button.transparent.active {
+      background-color: transparent;
+    }
+
+    .button.primary,
+    .button.primary.active {
+      background-color: $primary;
+    }
+
+    .button.secondary,
+    .button.secondary.active {
+      background-color: $secondary;
+    }
+
+    .button.tertiary,
+    .button.tertiary.active {
+      background-color: $tertiary;
+    }
+
+    .button.success,
+    .button.success.active {
+      background-color: $success;
+    }
+
+    .button.warning,
+    .button.success.warning {
+      background-color: $warning;
+    }
+
+    .button.danger,
+    .button.danger.active {
+      background-color: $danger;
+    }
+
+    .button.callout_default,
+    .button.callout_default.active {
+      background-color: $secondary;
+    }
+
+    .button.callout_note,
+    .button.callout_note.active {
+      background-color: $primary;
+    }
+
+    .button.info,
+    .button.info.active {
+      background-color: $info;
+    }
+  }
+
+  .path-filter-widget {
+    padding: 1em 0 1em 0.5em;
+    border-left: 1px solid #edf1f2;
+    margin-left: 2em;
+
+    .filter-title {
+      padding: 0.5em;
+      margin-left: -0.5em;
+      background-color: #edf1f2;
+    }
+  }
+
+  .field-wrapper-icon {
+    .icon-container.italia-icon {
+      svg.icon {
+        height: 1.5em;
+      }
+    }
+  }
+
+  // z-index necessario su Volto 17 finché non passiamo ad usare slate
+  .block {
+    &.image {
+      .block.align {
+        &.left,
+        &.right {
+          z-index: 0;
+        }
+      }
+    }
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: $link-decoration;
+    }
+  }
+
+  &.section-controlpanel {
+    .grid > .row {
+      // HIDE TAXONOMIES CONTROLPANEL UNTIL #62343 IS DONE
+      > .column:has([href='/controlpanel/taxonomies']),
+      > .column:has([href='/controlpanel/volto-settings']) {
+        display: none;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .menu-configuration-widget {
+      .menu-item-field-additionalClasses {
+        display: none;
+      }
+    }
+    // Hide the help text in the configuration widgets
+    // TODO this is a temporary fix, a release needs to be made on every add-on to fix this
+    .footer-configuration-widget .stretched.twelve.wide.column:has(p.help),
+    .slimheader-configuration-widget
+      .wrapper:has(label[for='menu-configuration']),
+    .subfooter-configuration-widget
+      .wrapper:has(label[for='menu-configuration']),
+    .secondary-menu-configuration-widget
+      .wrapper:has(label[for='menu-configuration']),
+    .menu-configuration-widget .wrapper:has(label[for='menu-configuration']) {
+      display: none !important;
+    }
+  }
+
+  [data-rbd-draggable-context-id] {
+    margin-bottom: 1rem;
+  }
+
+  .block {
+    .block:not(.inner)::before {
+      top: -0.3rem;
+      height: calc(100% + 0.6rem);
+    }
+
+    h1 {
+      font-size: 2.66rem;
+      line-height: 1.25;
+    }
+  }
+
+  .block-editor-title,
+  .block-editor-description {
+    & + [class^='block-editor'] {
+      margin-top: 2.8rem;
+    }
+  }
+
+  .block-editor-title + .block-editor-description {
+    margin-top: 0;
+  }
+
+  .block-editor-description {
+    &,
+    .documentDescription {
+      color: $body-color;
+      font-family: $font-family-sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+
+  /////
+
+  .column.color-chooser {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .upload-row {
+    img.ui.image {
+      max-width: 100%;
+      height: auto;
+      max-height: 60px;
+    }
+  }
+
+  .ui.page.modals.dimmer {
+    .ui.modal {
+      .content {
+        max-height: 80vh;
+        overflow-y: scroll;
+      }
+
+      .occurences {
+        .content {
+          max-height: unset;
+          overflow-y: unset;
+        }
+      }
+    }
+  }
+
+  #page-login {
+    .ui.text.container,
+    .ui.form input[type='text'],
+    .ui.form input[type='password'] {
+      font-family: $font-family-sans-serif;
+    }
+
+    .help {
+      a {
+        color: $link-color;
+
+        &:hover,
+        &:focus {
+          color: darken($link-color, 10%);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    button#login-form-submit.ui.basic.button.primary {
+      color: $link-color !important;
+
+      &:hover,
+      &:focus {
+        color: darken($link-color, 10%) !important;
+      }
+    }
+
+    button#login-form-submit.ui.basic.button.primary,
+    a#login-form-cancel.ui.basic.button.secondary {
+      &:hover,
+      &:focus {
+        svg {
+          box-shadow: 0 0 0.5em rgba($neutral-2-b5, 0.5);
+        }
+      }
+    }
+
+    .ui.secondary.segment {
+      color: $text-color;
+    }
+
+    .row .column {
+      width: 100% !important;
+
+      label {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+
+      .wrapper {
+        min-height: 0;
+      }
+    }
+
+    .ui.text.container {
+      max-width: 600px !important;
+    }
+
+    .ui.segment.form {
+      padding-top: 1rem;
+    }
+  }
+
+  #page-password-reset {
+    &,
+    h1,
+    .ui.message .header {
+      font-family: $font-family-sans-serif;
+    }
+  }
+
+  .objectbrowser-field {
+    .selected-values {
+      .ui.label {
+        position: relative;
+        padding-right: 2em;
+
+        .icon.right {
+          position: absolute;
+          top: 50%;
+          right: 0.5em;
+          margin: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  #page-contents.ui.container.folder-contents {
+    @media (min-width: 992px) {
+      width: 90% !important;
+    }
+
+    table.ui.single.line tbody {
+      white-space: normal;
+      word-break: break-word;
+    }
+  }
+
+  &.view-diffview,
+  &.section-historyview {
+    .ui.table,
+    #toolbar .ui.table {
+      width: 100%;
+      table-layout: fixed;
+    }
+  }
+
+  &.view-diffview {
+    @import 'bootstrap/scss/card';
+    //@import 'bootstrap-italia/src/scss/custom/card';
+    //@import './bootstrap-override/bootstrap-italia/_card.scss';
+  }
+
+  .recurrence-form {
+    .byday-field {
+      .ui.button {
+        padding: 0px;
+      }
+    }
+
+    .byyear-field {
+      .byyear-byday {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    }
+  }
+}
+
+body.has-toolbar {
+  #toolbar .toolbar-content.show {
+    z-index: 9;
+  }
+
+  &.public-ui #toolbar {
+    .toolbar {
+      &:before {
+        content: none;
+      }
+    }
+
+    .toolbar-content.show {
+      max-height: 100vh;
+      overflow-y: scroll !important;
+    }
+  }
+}
+
+#page-add-translation {
+  .block {
+    .ui.container {
+      width: 100% !important;
+    }
+
+    .row.row-full-width {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+}
