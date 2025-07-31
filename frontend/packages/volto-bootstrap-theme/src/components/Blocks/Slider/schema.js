@@ -45,8 +45,8 @@ const SliderItemSchema = ({ intl }) => {
 
 const SliderSchema = ({ intl }) => {
   return {
-    title: intl.formatMessage(messages.blocktitle),
-    block: 'block',
+    title: intl.formatMessage(messages.sliderBlockTitle),
+
     fieldsets: [
       {
         id: 'default',

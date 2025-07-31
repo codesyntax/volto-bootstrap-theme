@@ -21,6 +21,10 @@ import SliderView from '../components/Blocks/Slider/View';
 import { SliderSchema } from '../components/Blocks/Slider/schema';
 import SliderDefaultVariation from '../components/Blocks/Slider/VariationSlider';
 
+import AccordionView from '../components/Blocks/Accordion/View';
+import { AccordionSchema } from '../components/Blocks/Accordion/schema';
+import AccordionDefaultVariation from '../components/Blocks/Accordion/AccordionDefaultVariation';
+
 export default function install(config) {
   // disable gridBlock and teaser
   config.blocks.blocksConfig.gridBlock = {};
@@ -120,6 +124,25 @@ export default function install(config) {
         title: 'Slider',
         isDefault: true,
         template: SliderDefaultVariation,
+      },
+    ],
+  };
+
+  config.blocks.blocksConfig._vbtAccordion = {
+    id: '_vbtAccordion',
+    title: 'Accordion',
+    view: AccordionView,
+    //edit: BlockEdit,
+    blockSchema: AccordionSchema,
+    icon: homeBand,
+    sidebarTab: 1,
+    group: 'common',
+    variations: [
+      {
+        id: 'variation01',
+        title: 'Accordion (text only content)',
+        isDefault: true,
+        template: AccordionDefaultVariation,
       },
     ],
   };

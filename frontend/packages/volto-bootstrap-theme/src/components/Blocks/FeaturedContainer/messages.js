@@ -25,9 +25,9 @@ const messages = defineMessages({
     id: 'cardURL',
     defaultMessage: 'cardURL',
   },
-  blocktitle: {
-    id: 'blocktitle',
-    defaultMessage: 'blocktitle',
+  blocktitleFeaturedContainer: {
+    id: 'blocktitleFeaturedContainer',
+    defaultMessage: 'blocktitleFeaturedContainer',
   },
   URL: {
     id: 'URL',

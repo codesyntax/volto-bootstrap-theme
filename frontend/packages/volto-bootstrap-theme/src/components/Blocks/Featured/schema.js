@@ -3,7 +3,7 @@ import messages from './messages';
 const Schema = ({ intl }) => {
   return {
     title: intl.formatMessage(messages.blocktitle),
-    block: 'block',
+
     fieldsets: [
       {
         id: 'default',

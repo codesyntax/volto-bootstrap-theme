@@ -25,9 +25,9 @@ const messages = defineMessages({
     id: 'cardURL',
     defaultMessage: 'cardURL',
   },
-  blocktitle: {
-    id: 'blocktitle',
-    defaultMessage: 'blocktitle',
+  sliderBlockTitle: {
+    id: 'sliderBlockTitle',
+    defaultMessage: 'sliderBlockTitle',
   },
   URL: {
     id: 'URL',

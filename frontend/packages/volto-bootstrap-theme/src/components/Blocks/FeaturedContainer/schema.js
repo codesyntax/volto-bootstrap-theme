@@ -43,7 +43,7 @@ const FeaturedContainerCardSchema = ({ intl }) => {
 const FeaturedContainerSchema = ({ intl }) => {
   return {
     title: intl.formatMessage(messages.blocktitle),
-    block: 'block',
+
     fieldsets: [
       {
         id: 'default',
