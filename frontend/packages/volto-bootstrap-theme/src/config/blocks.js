@@ -26,6 +26,17 @@ export default function install(config) {
   config.blocks.blocksConfig.gridBlock = {};
   config.blocks.blocksConfig.teaser = {};
 
+  // allow only one variation for listing block
+  config.blocks.blocksConfig.listing.variations = [
+    {
+      id: 'grid',
+      title: 'Grid',
+      isDefault: true,
+      template: GridTemplateVariation,
+      schemaEnhancer: schemaEnhancerGridTemplate,
+    },
+  ];
+
   config.blocks.blocksConfig._vbtFeatured = {
     id: '_vbtFeatured',
     title: 'Featured',
@@ -73,14 +84,6 @@ export default function install(config) {
     icon: homeBand,
     sidebarTab: 1,
     group: 'common',
-  };
-
-  config.blocks.blocksConfig.listing.variations = {
-    id: 'grid',
-    title: 'Grid',
-    isDefault: true,
-    template: GridTemplateVariation,
-    schemaEnhancer: schemaEnhancerGridTemplate,
   };
 
   config.blocks.blocksConfig._vbtFeaturedContainer = {
