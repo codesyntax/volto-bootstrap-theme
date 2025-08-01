@@ -1,0 +1,64 @@
+/***
+******************+++
+Questo file definisce alcune variabili aggiuntive per design-comuni-plone-theme
+******************+++
+**/
+
+//cms
+$placeholder: #b8c6c9 !default;
+
+//site
+$primary-h: 229 !default;
+$primary-s: 72 !default;
+// $primary-b: 80 !default;
+
+$primary-text: #fff !default;
+$secondary-text: #fff !default;
+$tertiary: #be2816 !default;
+$tertiary-text: #fff !default;
+$highlight-search: #ffff00 !default;
+$font-family-monospace-light: Roboto Mono Light !default;
+
+// Per abilitare l'header bianco impostare a true
+// e impostare "$header-center-bg-color: white" come qui sotto
+$enable-header-white-background: false !default;
+// $header-center-bg-color: white;
+// $header-slim-bg-color: #3f3f3f;
+
+// GDPR-BANNER RELATED
+$gdpr-accept-all: #005700 !default;
+$gdpr-toggle-checked: #005700 !default;
+$gdpr-toggle: #b22515 !default;
+$gdpr-toggle-border: #000 !default;
+$gdpr-link-color: #004285 !default;
+
+$caption-text: #455b71 !default;
+
+$primary-a0: hsl($primary-h, 62%, 97%) !default;
+
+// ALERT-BLOCK CUSTOM COLORS
+$alert-danger: #a32219 !default;
+$alert-danger-text: #fff !default;
+$alert-warning: #eb973f !default;
+$alert-warning-text: #000 !default;
+$alert-info: #f0c250 !default;
+$alert-info-text: #000 !default;
+
+$argument-icon-color: $tertiary !default;
+$argument-icon-bg: #f5f6f7 !default;
+$external-link-fill-buttons: $tertiary-text !default;
+$external-link-fill-subfooter: $tertiary-text !default;
+
+// $dvt-header-center-max-height: 166px;
+// $header-center-max-height-mob: 80px;
+
+$dvt-navigation-v-padding: 15px !default;
+// $navigation-h-padding: 24px;
+
+$spacer: 16px;
+$ribbon-spacing-h: calc($spacer * 3);
+$ribbon-width: calc($spacer * 2);
+
+// accessible focus colors
+$outer-focus-outline: #000 !default;
+$inner-focus-shadow: #fff !default;

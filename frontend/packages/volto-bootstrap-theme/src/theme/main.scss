@@ -1,36 +1,11 @@
 /* This import allows third-party addons to use their own "_variables.scss" at this point */
 @import 'addonsThemeCustomizationsVariables';
 
+@import 'site-variables';
 @import 'custom_bootstrap';
-
-// See: https://github.com/RedTurtle/design-comuni-plone-theme/blob/main/src/theme/site.scss
 @import 'cms-ui';
-
-.public-ui {
-  // Utilities
-  @import 'bootstrap/scss/utilities/api';
-  // scss-docs-end import-stack
-
-  $font-size-base: 1.125rem !default;
-
-  // #mainheader,
-  // footer {
-  //   background-color: $gray-100;
-  // }
-
-  // .address-container {
-  //   @extend .my-3;
-  // }
-
-  // .address-first-line {
-  //   @extend .mb-lg-0;
-  //   @extend .mb-3;
-  // }
-
-  // .address-second-line {
-  //   @extend .mb-0;
-  // }
-}
+@import 'mixins';
+@import 'extras';
 
 /* No CSS beyond this point except next line */
 /* This import allows third-party addons to load their own "_main.scss" at this point */

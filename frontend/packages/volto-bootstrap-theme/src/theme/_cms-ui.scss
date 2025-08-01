@@ -1,9 +1,13 @@
 @import 'cms-ui_container';
 
 // Undefined errors: so we define them here
-$focus-outline-color: black;
+$focus-outline-color: $gray-100;
 $gray-border: $gray-500;
+$gray-secondary: $gray-500;
 $tertiary: black;
+$neutral-1-a1: black;
+$neutral-1-a5: black;
+$neutral-1-a7: black;
 $neutral-2-b5: black;
 $text-color: black;
 

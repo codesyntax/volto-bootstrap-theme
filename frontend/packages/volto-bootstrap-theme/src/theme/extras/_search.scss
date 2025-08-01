@@ -1,0 +1,130 @@
+body.search-modal-opened {
+  overflow: hidden; /*to disable scroll on search modal opened*/
+}
+
+.it-search-wrapper {
+  .search-link {
+    cursor: pointer;
+  }
+}
+
+#search-modal {
+  .btn-link {
+    &:focus {
+      box-shadow:
+        $btn-box-shadow,
+        0 0 0 $btn-focus-width rgba($link-color, 0.5);
+    }
+  }
+
+  .modal-header {
+    flex-shrink: 0;
+
+    button.btn-close {
+      display: none;
+    }
+
+    .modal-title {
+      width: 100%;
+    }
+  }
+
+  .modal-title {
+    .modal-title-centered {
+      flex: 1;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+
+  .nav-tabs {
+    .nav-item {
+      &:first-of-type {
+        a.nav-link:not(.active):focus {
+          border-right: 2px solid hsl(36deg, 100%, 50%) !important;
+          border-left: 2px solid hsl(36deg, 100%, 50%) !important;
+        }
+
+        a.nav-link.active:focus {
+          border-right: 2px solid hsl(36deg, 100%, 50%) !important;
+          border-left: 2px solid hsl(36deg, 100%, 50%) !important;
+        }
+      }
+
+      &:last-of-type {
+        a.nav-link:focus {
+          border-right: 2px solid hsl(36deg, 100%, 50%) !important;
+          border-right: 2px solid hsl(36deg, 100%, 50%) !important;
+        }
+      }
+
+      a.nav-link {
+        width: 100%;
+        border-top: 2px solid transparent;
+
+        &.active {
+          border-right: none;
+          border-left: none;
+        }
+
+        &:focus {
+          border-color: hsl(36deg, 100%, 50%) !important;
+          border-right: none;
+          border-left: none;
+          box-shadow: 0 0 0 2px hsl(36deg, 100%, 50%) !important;
+          outline: none;
+        }
+
+        &:not(.active):focus {
+          border-right: 2px solid hsl(36deg, 100%, 50%) !important;
+        }
+      }
+    }
+  }
+
+  .group-col.columns {
+    columns: 2;
+  }
+}
+
+.search-results-wrapper {
+  mark.highlighted-text {
+    padding: 0em 0.1875em;
+    background-color: $highlight-search;
+  }
+
+  .card {
+    &::after {
+      content: none;
+    }
+
+    .card-body {
+      .category-top {
+        .data:before {
+          content: none;
+        }
+      }
+
+      .card-title {
+        line-height: 1.3em;
+      }
+    }
+  }
+
+  .ordering-widget {
+    @media (max-width: 991px) {
+      .bootstrap-select-wrapper {
+        label[for='search-sort-on'] {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .searchSpinnerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+}
