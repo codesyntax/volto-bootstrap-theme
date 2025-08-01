@@ -1,10 +1,13 @@
 import React from 'react';
 import withBlockExtensions from '@plone/volto/helpers/Extensions/withBlockExtensions';
+
+import { FormattedMessage } from 'react-intl';
+
 const BlockView = (props) => {
   const { id, data } = props;
 
   const accordionId = `accordion-uid-${id}`;
-  console.log('data', data);
+
   const panels = data.accordionPanels?.items || [];
 
   return (
@@ -42,7 +45,12 @@ const BlockView = (props) => {
           })}
         </div>
       ) : (
-        <p>Add pannels on the right</p>
+        <p>
+          <FormattedMessage
+            id="addPanelsOnTheRight"
+            defaultMessage="Add pannels on the right"
+          />
+        </p>
       )}
     </div>
   );

@@ -14,7 +14,9 @@ const AccordionPanelSchema = ({ intl }) => {
       title: {
         title: intl.formatMessage(messages.accordionPanelTitle),
         type: 'string',
-        placeholder: 'Card title here',
+        placeholder: intl.formatMessage(
+          messages.accordionPanelTitlePlaceholder,
+        ),
       },
       text: {
         title: intl.formatMessage(messages.accordionPanelText),

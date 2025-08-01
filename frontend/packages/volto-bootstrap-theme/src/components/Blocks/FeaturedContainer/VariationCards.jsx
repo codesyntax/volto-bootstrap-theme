@@ -3,6 +3,7 @@ import React from 'react';
 import config from '@plone/volto/registry';
 import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
 import cx from 'classnames';
+import { FormattedMessage } from 'react-intl';
 
 import Card from '@codesyntax/volto-bootstrap-theme/components/Card/Card';
 
@@ -45,7 +46,12 @@ const BlockView = (props) => {
           );
         })
       ) : (
-        <p>Add your cards on the right side</p>
+        <p>
+          <FormattedMessage
+            id="addYourCardsOnTheRightSide"
+            defaultMessage="Add your cards on the right side"
+          />
+        </p>
       )}
     </div>
   );

@@ -2,7 +2,7 @@ import messages from './messages';
 
 const Schema = ({ intl }) => {
   return {
-    title: intl.formatMessage(messages.blocktitle),
+    title: intl.formatMessage(messages.featuredBlockTitle),
 
     fieldsets: [
       {

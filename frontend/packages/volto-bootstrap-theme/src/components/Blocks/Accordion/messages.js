@@ -25,6 +25,10 @@ const messages = defineMessages({
     id: 'default',
     defaultMessage: 'default',
   },
+  accordionPanelTitlePlaceholder: {
+    id: 'accordionPanelTitlePlaceholder',
+    defaultMessage: 'Write the title of the accordion here',
+  },
 });
 
 export default messages;

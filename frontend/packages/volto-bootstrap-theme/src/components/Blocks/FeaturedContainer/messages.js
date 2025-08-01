@@ -41,6 +41,10 @@ const messages = defineMessages({
     id: 'itemsPerRow',
     defaultMessage: 'itemsPerRow',
   },
+  featuredContainerBlockTitle: {
+    id: 'featuredContainerBlockTitle',
+    defaultMessage: 'featuredContainerBlockTitle',
+  },
 });
 
 export default messages;

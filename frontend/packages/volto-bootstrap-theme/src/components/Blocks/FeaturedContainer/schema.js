@@ -42,7 +42,7 @@ const FeaturedContainerCardSchema = ({ intl }) => {
 
 const FeaturedContainerSchema = ({ intl }) => {
   return {
-    title: intl.formatMessage(messages.blocktitle),
+    title: intl.formatMessage(messages.featuredContainerBlockTitle),
 
     fieldsets: [
       {

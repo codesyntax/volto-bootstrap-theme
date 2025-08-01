@@ -1,7 +1,7 @@
 import { defineMessages } from 'react-intl';
 
 const messages = defineMessages({
-  blocktitle: {
+  featuredBlockTitle: {
     id: 'blocktitle',
     defaultMessage: 'blocktitle',
   },
@@ -13,13 +13,13 @@ const messages = defineMessages({
     id: 'title',
     defaultMessage: 'Title',
   },
-  image: {
-    id: 'image',
-    defaultMessage: 'Image',
-  },
   url: {
     id: 'url',
     defaultMessage: 'url',
+  },
+  image: {
+    id: 'image',
+    defaultMessage: 'image',
   },
   linkText: {
     id: 'linkText',
@@ -28,6 +28,14 @@ const messages = defineMessages({
   imagePosition: {
     id: 'imagePosition',
     defaultMessage: 'imagePosition',
+  },
+  left: {
+    id: 'left',
+    defaultMessage: 'left',
+  },
+  right: {
+    id: 'right',
+    defaultMessage: 'right',
   },
 });
 

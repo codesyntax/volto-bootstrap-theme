@@ -76,9 +76,50 @@ msgstr ""
 msgid "Toggle Navigation"
 msgstr ""
 
+#. Default: "URL"
+#: components/Blocks/FeaturedContainer/messages
+#: components/Blocks/Slider/messages
+msgid "URL"
+msgstr ""
+
 #. Default: "Unknown Block {block}"
 #: components/Theme/RenderBlocks
 msgid "Unknown Block"
+msgstr ""
+
+#. Default: "accordionBlockTitle"
+#: components/Blocks/Accordion/messages
+msgid "accordionBlockTitle"
+msgstr ""
+
+#. Default: "accordionPanelText"
+#: components/Blocks/Accordion/messages
+msgid "accordionPanelText"
+msgstr ""
+
+#. Default: "accordionPanelTitle"
+#: components/Blocks/Accordion/messages
+msgid "accordionPanelTitle"
+msgstr ""
+
+#. Default: "Write the title of the accordion here"
+#: components/Blocks/Accordion/messages
+msgid "accordionPanelTitlePlaceholder"
+msgstr ""
+
+#. Default: "accordionPanels"
+#: components/Blocks/Accordion/messages
+msgid "accordionPanels"
+msgstr ""
+
+#. Default: "Add pannels on the right"
+#: components/Blocks/Accordion/AccordionDefaultVariation
+msgid "addPanelsOnTheRight"
+msgstr ""
+
+#. Default: "Add your cards on the right side"
+#: components/Blocks/FeaturedContainer/VariationCards
+msgid "addYourCardsOnTheRightSide"
 msgstr ""
 
 #. Default: "blocktitle"
@@ -86,12 +127,55 @@ msgstr ""
 msgid "blocktitle"
 msgstr ""
 
+#. Default: "blocktitleFeaturedContainer"
+#: components/Blocks/FeaturedContainer/messages
+msgid "blocktitleFeaturedContainer"
+msgstr ""
+
+#. Default: "cardDescription"
+#: components/Blocks/FeaturedContainer/messages
+#: components/Blocks/Slider/messages
+msgid "cardDescription"
+msgstr ""
+
+#. Default: "cardImage"
+#: components/Blocks/FeaturedContainer/messages
+#: components/Blocks/Slider/messages
+msgid "cardImage"
+msgstr ""
+
+#. Default: "cardTitle"
+#: components/Blocks/FeaturedContainer/messages
+#: components/Blocks/Slider/messages
+msgid "cardTitle"
+msgstr ""
+
+#. Default: "cardURL"
+#: components/Blocks/FeaturedContainer/messages
+#: components/Blocks/Slider/messages
+msgid "cardURL"
+msgstr ""
+
+#. Default: "cards"
+#: components/Blocks/FeaturedContainer/messages
+#: components/Blocks/Slider/messages
+msgid "cards"
+msgstr ""
+
 #. Default: "default"
+#: components/Blocks/Accordion/messages
 #: components/Blocks/Featured/messages
+#: components/Blocks/FeaturedContainer/messages
+#: components/Blocks/Slider/messages
 msgid "default"
 msgstr ""
 
-#. Default: "Image"
+#. Default: "featuredContainerBlockTitle"
+#: components/Blocks/FeaturedContainer/messages
+msgid "featuredContainerBlockTitle"
+msgstr ""
+
+#. Default: "image"
 #: components/Blocks/Featured/messages
 msgid "image"
 msgstr ""
@@ -102,13 +186,21 @@ msgid "imagePosition"
 msgstr ""
 
 #. Default: "itemsPerRow"
+#: components/Blocks/FeaturedContainer/messages
 #: components/Blocks/Listing/messages
+#: components/Blocks/Slider/messages
 msgid "itemsPerRow"
+msgstr ""
+
+#. Default: "left"
+#: components/Blocks/Featured/messages
+msgid "left"
 msgstr ""
 
 #. Default: "linkText"
 #: components/Blocks/Featured/messages
 #: components/Blocks/Listing/messages
+#: components/Blocks/Slider/messages
 msgid "linkText"
 msgstr ""
 
@@ -117,8 +209,26 @@ msgstr ""
 msgid "loading"
 msgstr ""
 
-#. Default: "Title"
+#. Default: "right"
 #: components/Blocks/Featured/messages
+msgid "right"
+msgstr ""
+
+#. Default: "sliderBlockTitle"
+#: components/Blocks/Slider/messages
+msgid "sliderBlockTitle"
+msgstr ""
+
+#. Default: "sliderItems"
+#: components/Blocks/Slider/messages
+msgid "sliderItems"
+msgstr ""
+
+#. Default: "Title"
+#: components/Blocks/Accordion/messages
+#: components/Blocks/Featured/messages
+#: components/Blocks/FeaturedContainer/messages
+#: components/Blocks/Slider/messages
 msgid "title"
 msgstr ""
 
