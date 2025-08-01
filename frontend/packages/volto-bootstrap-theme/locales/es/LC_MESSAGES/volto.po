@@ -129,7 +129,7 @@ msgstr ""
 msgid "addYourCardsOnTheRightSide"
 msgstr ""
 
-#. Default: "blocktitle"
+#. Default: "featuredBlockTitle"
 #: components/Blocks/Featured/messages
 msgid "blocktitle"
 msgstr ""

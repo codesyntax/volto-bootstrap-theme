@@ -3,7 +3,7 @@ import { defineMessages } from 'react-intl';
 const messages = defineMessages({
   featuredBlockTitle: {
     id: 'blocktitle',
-    defaultMessage: 'blocktitle',
+    defaultMessage: 'featuredBlockTitle',
   },
   default: {
     id: 'default',

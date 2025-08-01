@@ -24,7 +24,9 @@ const Schema = ({ intl }) => {
         title: intl.formatMessage(messages.url),
         widget: 'url',
       },
-
+      linkText: {
+        title: intl.formatMessage(messages.linkText),
+      },
       title: {
         title: intl.formatMessage(messages.title),
       },

@@ -5,235 +5,232 @@ msgstr ""
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
-"Language: de\n"
 "Language-Team: \n"
-"Content-Type: \n"
-"Content-Transfer-Encoding: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. Default: "Add link"
 #: components/Widgets/schema/navrootFooterLinksSchema
 msgid "Add link"
-msgstr ""
+msgstr "Gehitu esteka"
 
 #. Default: "Breadcrumbs"
 #: components/Breadcrumbs/Breadcrumbs
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Breadcrumbak"
 
 #. Default: "Home"
 #: components/Breadcrumbs/Breadcrumbs
 msgid "Home"
-msgstr ""
+msgstr "Hasiera"
 
 #. Default: "Invalid block - Will be removed on saving"
 #: components/Theme/RenderBlocks
 msgid "Invalid Block"
-msgstr ""
+msgstr "Blokea ez da zuzena"
 
 #. Default: "Link"
 #: components/Widgets/schema/navrootFooterLinksSchema
 msgid "Link"
-msgstr ""
+msgstr "Esteka"
 
 #. Default: "Logo of {siteName}"
 #: components/Logo/Logo
 msgid "Logo of"
-msgstr ""
+msgstr "Logoa"
 
 #. Default: "No items found in this container."
 #: components/Blocks/Listing/ListingBody
 msgid "No items found in this container."
-msgstr ""
+msgstr "Ez dago elementurik hemen"
 
 #. Default: "Open in a new tab"
 #: components/Widgets/schema/navrootFooterLinksSchema
 msgid "Open in a new tab"
-msgstr ""
+msgstr "Fitxa berri baten ireki"
 
 #. Default: "Site Setup"
 #: components/Breadcrumbs/Breadcrumbs
 msgid "Site Setup"
-msgstr ""
+msgstr "Atariaren konfigurazioa"
 
 #. Default: "Switch to"
 #: components/LanguageSelector/LanguageSelector
 msgid "Switch to"
-msgstr ""
+msgstr "Hona aldatu"
 
 #. Default: "Target"
 #: components/Widgets/schema/navrootFooterLinksSchema
 msgid "Target"
-msgstr ""
+msgstr "Helburua"
 
 #. Default: "Title"
 #: components/Widgets/schema/navrootFooterLinksSchema
 msgid "Title"
-msgstr ""
+msgstr "Izenburua"
 
 #. Default: "Toggle navigation"
 #: components/Navigation/Navigation
 msgid "Toggle Navigation"
-msgstr ""
+msgstr "Nabigazioa erakutsi/ezkutatu"
 
 #. Default: "URL"
 #: components/Blocks/FeaturedContainer/messages
 #: components/Blocks/Slider/messages
 msgid "URL"
-msgstr ""
+msgstr "URLa"
 
 #. Default: "Unknown Block {block}"
 #: components/Theme/RenderBlocks
 msgid "Unknown Block"
-msgstr ""
+msgstr "Bloke ezezaguna"
 
 #. Default: "accordionBlockTitle"
 #: components/Blocks/Accordion/messages
 msgid "accordionBlockTitle"
-msgstr ""
+msgstr "Akordeoi-blokea"
 
 #. Default: "accordionPanelText"
 #: components/Blocks/Accordion/messages
 msgid "accordionPanelText"
-msgstr ""
+msgstr "Panelaren testua"
 
 #. Default: "accordionPanelTitle"
 #: components/Blocks/Accordion/messages
 msgid "accordionPanelTitle"
-msgstr ""
+msgstr "Panelaren izenburua"
 
 #. Default: "Write the title of the accordion here"
 #: components/Blocks/Accordion/messages
 msgid "accordionPanelTitlePlaceholder"
-msgstr ""
+msgstr "Idatzi izenburua hemen"
 
 #. Default: "accordionPanels"
 #: components/Blocks/Accordion/messages
 msgid "accordionPanels"
-msgstr ""
+msgstr "Panelak"
 
 #. Default: "Add pannels on the right"
 #: components/Blocks/Accordion/AccordionDefaultVariation
 msgid "addPanelsOnTheRight"
-msgstr ""
+msgstr "Gehitu panel gehiago eskuman"
 
 #. Default: "Add your cards on the right side"
 #: components/Blocks/FeaturedContainer/VariationCards
 msgid "addYourCardsOnTheRightSide"
-msgstr ""
+msgstr "Gehitu destakatu gehiago eskuman"
 
-#. Default: "blocktitle"
+#. Default: "featuredBlockTitle"
 #: components/Blocks/Featured/messages
 msgid "blocktitle"
-msgstr ""
+msgstr "Destakatuaren blokea"
 
 #. Default: "blocktitleFeaturedContainer"
 #: components/Blocks/FeaturedContainer/messages
 msgid "blocktitleFeaturedContainer"
-msgstr ""
+msgstr "Destakatuak"
 
 #. Default: "cardDescription"
 #: components/Blocks/FeaturedContainer/messages
 #: components/Blocks/Slider/messages
 msgid "cardDescription"
-msgstr ""
+msgstr "Deskribapena"
 
 #. Default: "cardImage"
 #: components/Blocks/FeaturedContainer/messages
 #: components/Blocks/Slider/messages
 msgid "cardImage"
-msgstr ""
+msgstr "Irudia"
 
 #. Default: "cardTitle"
 #: components/Blocks/FeaturedContainer/messages
 #: components/Blocks/Slider/messages
 msgid "cardTitle"
-msgstr ""
+msgstr "Izenburua"
 
 #. Default: "cardURL"
 #: components/Blocks/FeaturedContainer/messages
 #: components/Blocks/Slider/messages
 msgid "cardURL"
-msgstr ""
+msgstr "URLa"
 
 #. Default: "cards"
 #: components/Blocks/FeaturedContainer/messages
 #: components/Blocks/Slider/messages
 msgid "cards"
-msgstr ""
+msgstr "Destakatuak"
 
 #. Default: "default"
-#: components/Blocks/Accordion/messages
-#: components/Blocks/Featured/messages
+#: components/Blocks/Accordion/messages components/Blocks/Featured/messages
 #: components/Blocks/FeaturedContainer/messages
 #: components/Blocks/Slider/messages
 msgid "default"
-msgstr ""
+msgstr "Defektuzkoa"
 
 #. Default: "featuredContainerBlockTitle"
 #: components/Blocks/FeaturedContainer/messages
 msgid "featuredContainerBlockTitle"
-msgstr ""
+msgstr "Izenburua"
 
 #. Default: "image"
 #: components/Blocks/Featured/messages
 msgid "image"
-msgstr ""
+msgstr "Irudia"
 
 #. Default: "imagePosition"
 #: components/Blocks/Featured/messages
 msgid "imagePosition"
-msgstr ""
+msgstr "Irudiaren kokalekua"
 
 #. Default: "itemsPerRow"
 #: components/Blocks/FeaturedContainer/messages
-#: components/Blocks/Listing/messages
-#: components/Blocks/Slider/messages
+#: components/Blocks/Listing/messages components/Blocks/Slider/messages
 msgid "itemsPerRow"
-msgstr ""
+msgstr "Lerroko elementu kopurua"
 
 #. Default: "left"
 #: components/Blocks/Featured/messages
 msgid "left"
-msgstr ""
+msgstr "Ezkerrean"
 
 #. Default: "linkText"
-#: components/Blocks/Featured/messages
-#: components/Blocks/Listing/messages
+#: components/Blocks/Featured/messages components/Blocks/Listing/messages
 #: components/Blocks/Slider/messages
 msgid "linkText"
-msgstr ""
+msgstr "Estekaren testua"
 
 #. Default: "Loading"
 #: components/Blocks/Listing/ListingBody
 msgid "loading"
-msgstr ""
+msgstr "kargatzen"
 
 #. Default: "right"
 #: components/Blocks/Featured/messages
 msgid "right"
-msgstr ""
+msgstr "Eskuman"
 
 #. Default: "sliderBlockTitle"
 #: components/Blocks/Slider/messages
 msgid "sliderBlockTitle"
-msgstr ""
+msgstr "Sliderra"
 
 #. Default: "sliderItems"
 #: components/Blocks/Slider/messages
 msgid "sliderItems"
-msgstr ""
+msgstr "Sliderreko elementuak"
 
 #. Default: "Title"
-#: components/Blocks/Accordion/messages
-#: components/Blocks/Featured/messages
+#: components/Blocks/Accordion/messages components/Blocks/Featured/messages
 #: components/Blocks/FeaturedContainer/messages
 #: components/Blocks/Slider/messages
 msgid "title"
-msgstr ""
+msgstr "Izenburua"
 
 #. Default: "url"
-#: components/Blocks/Featured/messages
-#: components/Blocks/Listing/messages
+#: components/Blocks/Featured/messages components/Blocks/Listing/messages
 msgid "url"
-msgstr ""
+msgstr "URLa"
