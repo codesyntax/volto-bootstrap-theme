@@ -19,7 +19,7 @@ const BlockView = (props) => {
               <div className="accordion-item" key={`${accordionId}-${key}`}>
                 <div className="accordion-header h3">
                   <button
-                    class="accordion-button collapsed"
+                    className="accordion-button collapsed"
                     aria-controls={`#${accordionId}-${key}`}
                     aria-expanded="false"
                     type="button"
@@ -31,12 +31,12 @@ const BlockView = (props) => {
                 </div>
 
                 <div
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   id={`${accordionId}-${key}`}
                   data-bs-parent={`#${accordionId}`}
                 >
                   <div
-                    class="accordion-body"
+                    className="accordion-body"
                     dangerouslySetInnerHTML={{ __html: item.text?.data }}
                   ></div>
                 </div>
