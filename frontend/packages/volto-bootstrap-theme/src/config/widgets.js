@@ -4,6 +4,8 @@ import FeaturedContainerCardSchemaWidget from '@codesyntax/volto-bootstrap-theme
 import SliderItemSchemaWidget from '@codesyntax/volto-bootstrap-theme/components/Widgets/SliderItemSchemaWidget';
 import AccordionPanelSchemaWidget from '@codesyntax/volto-bootstrap-theme/components/Widgets/AccordionPanelSchemaWidget';
 
+import AlignWidget from '@plone/volto/components/manage/Widgets/AlignWidget';
+
 export default function install(config) {
   // The backend has defined a field with a widgetOptions of {schemaName: 'navrootFooterLinks'}
   // With this registration we link the backend requirement and the frontend requirement
@@ -19,6 +21,9 @@ export default function install(config) {
     sliderItems: SliderItemSchemaWidget,
     accordionPanels: AccordionPanelSchemaWidget,
   };
+
+  //config.widgets.widget.blockWidth = BlockWidthWidget;
+  config.widgets.widget.blockWidth = AlignWidget;
 
   return config;
 }

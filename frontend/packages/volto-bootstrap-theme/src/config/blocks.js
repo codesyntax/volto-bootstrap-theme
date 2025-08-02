@@ -1,4 +1,4 @@
-import { composeSchema } from '@plone/volto/helpers';
+import { composeSchema, addStyling } from '@plone/volto/helpers';
 import homeBand from '@plone/volto/icons/image-wide.svg';
 
 import FeaturedBlockView from '../components/Blocks/Featured/View';
@@ -24,6 +24,8 @@ import SliderDefaultVariation from '../components/Blocks/Slider/VariationSlider'
 import AccordionView from '../components/Blocks/Accordion/View';
 import { AccordionSchema } from '../components/Blocks/Accordion/schema';
 import AccordionDefaultVariation from '../components/Blocks/Accordion/AccordionDefaultVariation';
+
+import { blockWidthSchemaEnhancer } from '../components/Blocks/schemaEnhancers';
 
 export default function install(config) {
   // disable gridBlock and teaser
@@ -146,6 +148,21 @@ export default function install(config) {
       },
     ],
   };
+
+  /*
+   * Block width definitions
+   * Idea taken from: Volto Light Theme: https://github.com/kitconcept/volto-light-theme/tree/main/frontend/packages/volto-light-theme/src/config/blocks.tsx#L110
+   */
+  config.blocks.widths = ['narrow', 'wide', 'full'];
+  config.blocks.defaultWidth = 'wide';
+
+  // XXX: this is not elegant at all, can we rework it somehow?
+  for (let item in config.blocks.blocksConfig) {
+    config.blocks.blocksConfig[item].schemaEnhancer = composeSchema(
+      addStyling,
+      blockWidthSchemaEnhancer,
+    );
+  }
 
   return config;
 }

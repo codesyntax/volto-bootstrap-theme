@@ -27,4 +27,5 @@ customization
 new_project
 listing
 slots
+block-widths
 

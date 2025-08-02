@@ -4,12 +4,13 @@ import NewsItemCardBody from '../components/CardBody/NewsItemCardBody';
 import EventCardBody from '../components/CardBody/EventCardBody';
 
 export default function install(config) {
-  // Register a custom Container component from @plone/components
+  // this is a <div class="container"> ... </div> item
   config.registerComponent({
     name: 'Container',
     component: Container,
   });
 
+  // Custom components for Listing Block's GridTemplate
   config.registerComponent({
     name: 'CardBodyContent',
     component: DefaultCardBodyContent,

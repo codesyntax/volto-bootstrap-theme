@@ -1,0 +1,15 @@
+.block {
+  &.has--blockWidth--full {
+    max-width: 100%;
+  }
+
+  &.has--blockWidth--wide {
+    @extend .container;
+  }
+
+  &.has--blockWidth--narrow {
+    // XXX: how to make it generic depending on the 'md' grid size (or any other)?
+    max-width: 960px;
+    @extend .mx-auto;
+  }
+}
