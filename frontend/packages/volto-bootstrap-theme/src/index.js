@@ -3,6 +3,7 @@ import installBlocks from './config/blocks';
 import installWidgets from './config/widgets';
 import installApiExpanders from './config/apiExpanders';
 import installViews from './config/views';
+import installBlockStyleClassNameExtenders from './config/blockstyles';
 
 const applyConfig = (config) => {
   // Default Settings
@@ -21,6 +22,8 @@ const applyConfig = (config) => {
   installApiExpanders(config);
   // Install views
   installViews(config);
+  // Install styleClassNameExtenders
+  installBlockStyleClassNameExtenders(config);
 
   return config;
 };
